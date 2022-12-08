@@ -22,24 +22,45 @@ body {margin: 0;
 
 
 .main {
-    border: 2px solid $c-text;
+    display:grid;
+    grid-template-rows: 8% repeat(4,auto) ;
+    grid-row: 10px;
     position: relative;
     z-index: 1;
     top: -45px;
     bottom: 150px;
+    border: 2px solid $c-text;
     background-color: $c-primary; 
-    display:grid;
     width: 90vw;
     height: auto;
+    color: $c-text;
     margin-left: auto;
     margin-right:auto;
+    text-align: center;
+    
    
     @media screen and (min-width: 1000px) {
         grid-template-columns: 5% repeat(6, 1fr) 5%; }}
 
-        
 
-  
+.main > div {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+hr {
+    border: 1px solid $c-lines;
+margin-left: 40px;
+margin-right: 40px;
+}
+
+.pricing__photo {
+    width: 50%;
+}
+
+
+
+
 
 
 
