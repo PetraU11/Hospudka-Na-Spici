@@ -378,9 +378,6 @@ body {
 }
 
 .main {
-  display: grid;
-  grid-template-rows: 8% repeat(4, auto);
-  grid-row: 10px;
   position: relative;
   z-index: 1;
   top: -45px;
@@ -396,7 +393,26 @@ body {
 }
 @media screen and (min-width: 1000px) {
   .main {
+    display: grid;
     grid-template-columns: 5% repeat(6, 1fr) 5%;
+  }
+  .main__intro {
+    grid-column: 2/8;
+    grid-row: 2/3;
+  }
+  .main__description {
+    grid-column: 2/8;
+    grid-row: 3/4;
+  }
+  .main__pricing {
+    grid-column: 2/8;
+    grid-row: 4/5;
+  }
+  .main__orders {
+    grid-column: 2/8;
+  }
+  .main__contact {
+    grid-column: 2/8;
   }
 }
 
@@ -413,4 +429,9 @@ hr {
 
 .pricing__photo {
   width: 50%;
+}
+
+.main__contact > a {
+  text-decoration: none;
+  color: #4f190b;
 }/*# sourceMappingURL=catering.css.map */
