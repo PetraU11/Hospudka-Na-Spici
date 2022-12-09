@@ -1,0 +1,78 @@
+---
+layout: layout_booking.njk
+title: Rezervace
+---
+
+<main class="main"> 
+
+    <img class="main__logo-top" src="/images/logo-circle.png" alt="Logo">
+       
+    <a class="button homepage" href="/"> <span class="span__homepage"> Úvod </span></a>
+    <a class="button about" href="/about/"> <span class="span__about"> O nás </span></a>
+    <a class="button events" href="/events/"> <span class="span__events"> Aktuality & Akce </span></a> 
+    <a class="button booking" href="/"> <span class="span__booking"> Rezervace </span> </a> 
+    <a class="button drinks" href="/drinks/"> <span class="span__drinks"> Nápojový lístek</span></a> 
+    <a class="button catering" href="/catering/"> <span class="span__catering"> Catering </span></a>
+    
+    
+     <img class="main__logo-bottom" src="/images/logo-circle.png" alt="Logo">
+    
+    Rezervace přes rezervační formulář lze provádět pouze den předem. V případě rezervace v daný den nás neváhejte kontaktovat na tel.čísle: +420 777 777 777. 
+
+
+
+    <form action="http://formular.itgirls.cz" method="POST"> 
+
+<label for="jmeno"> Jméno </label>
+<input type="text" name="jmeno" id="jmeno" size="40" maxlength="40"
+placeholder="Rezervace bude provedena na jméno" autofocus required>
+
+<label for="email"> Kontaktní e-mail </label>
+<input type="email" name="email" id="email" placeholder="jiri.spica@seznam.cz" required>
+
+<label for="tel"> Kontaktní telefon </label>
+<input type="tel" name="tel" id="tel" min="9" max="12" placeholder="723 123 456" required>
+
+<label for="pocet"> Počet osob </label>
+<input type="number" name="pocet" id="pocet" min="1" required>
+
+<label for="datum"> Datum </label>
+<input type="date" name="datum" id="datum" required>
+
+<label for="cas"> Čas </label>
+<input type="time" name="cas" id="cas" required>
+
+<laber for="info"> Dodatečné informace</laber>
+<textarea name="info" id="info" cols="30" rows="10" placeholder="např. stůl naproti TV, stůl u šipek" > 
+    
+</textarea>
+
+
+
+<button type="submit" name="tlacitko">Odeslat rezervaci</button> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+    </main>
+    
+    
+    
