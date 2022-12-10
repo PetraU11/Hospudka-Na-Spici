@@ -246,11 +246,11 @@ span {
   }
 }
 
+/* Proměnné */
 *, :after, :before {
   box-sizing: border-box;
 }
 
-/* Proměnné */
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;

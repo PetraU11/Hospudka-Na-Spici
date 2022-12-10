@@ -2,11 +2,8 @@
 @use 'footer';
 @use 'buttons';
 @use 'primary-logos';
+@use 'body';
 
-
-*, :after, :before { box-sizing: border-box; }
-
-/* Proměnné */
 $c-background:rgb(247, 219, 181); 
 $c-lines:rgb(166, 100, 15);
 $c-h1: rgb(240, 226, 207);
@@ -14,10 +11,6 @@ $c-primary: rgb(240, 226, 207);
 $c-text: #4f190b;
 $gap-row: 20px;
 
-
-body {margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: $c-background;  }
 
 .main {
     border: 2px solid $c-text;

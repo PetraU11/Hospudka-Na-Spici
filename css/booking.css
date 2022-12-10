@@ -366,8 +366,15 @@ span {
   }
 }
 
+/* Proměnné */
 *, :after, :before {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(247, 219, 181);
 }
 
 /* Proměnné */
@@ -386,12 +393,28 @@ body {
   background-color: rgb(240, 226, 207);
   display: grid;
   width: 90vw;
-  min-height: 50vh;
   margin-left: auto;
   margin-right: auto;
+  padding: 5px;
 }
 @media screen and (min-width: 1000px) {
   .main {
     grid-template-columns: 5% repeat(6, 1fr) 5%;
   }
+}
+
+form {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 200px;
+}
+
+form label {
+  display: block;
+}
+
+.required {
+  color: red;
+  margin: 0;
+  display: inline-block;
 }/*# sourceMappingURL=booking.css.map */
