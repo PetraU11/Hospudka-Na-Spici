@@ -24,8 +24,7 @@
     height: 110px;
 
     @media screen and (min-width: 1000px) {
-     grid-row: 7 / 8;
     grid-column: 4 / 5;
-    transform: translate(100px,-80px); /*80px*/
+    transform: translate(100px,10px); /*80px*/
     }
 }
