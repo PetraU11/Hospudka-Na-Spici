@@ -363,7 +363,7 @@ span {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  transform: translateY(1000px); /* 150px*/
+  transform: translateY(90px); /* 150px*/
   width: 110px;
   height: 110px;
 }
@@ -376,6 +376,8 @@ span {
 }
 
 .main {
+  display: grid;
+  grid-template-rows: 10% repeat(3, auto) 10%;
   position: relative;
   z-index: 1;
   top: -45px;
@@ -395,19 +397,106 @@ span {
   }
 }
 
+.booking__info {
+  grid-row: 2/3;
+}
+
 form {
   margin-top: 40px;
   width: 100%;
-  max-width: 200px;
-  text-align: left;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-row: 3/4;
 }
 
-form label {
+.form {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 700px) {
+  .form {
+    display: flex;
+  }
+}
+
+.form label {
   display: block;
+}
+@media screen and (min-width: 700px) {
+  .form label {
+    flex: 0 0 170px;
+    text-align: right;
+    margin-right: 10px;
+  }
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  border: 2px solid rgb(166, 100, 15);
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 5px 10px;
+  background-color: rgb(247, 219, 181);
+}
+@media screen and (min-width: 700px) {
+  .form input,
+.form textarea {
+    flex: 1 1 100%;
+  }
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: 0;
+  border: 2px solid rgb(79, 25, 11);
+}
+
+.form input:-moz-placeholder-shown {
+  background-color: bisque;
+}
+
+.form input:-ms-input-placeholder {
+  background-color: bisque;
+}
+
+.form input:placeholder-shown {
+  background-color: bisque;
+}
+
+.form input:not(:-moz-placeholder-shown):valid {
+  background-color: rgb(224, 237, 236);
+}
+
+.form input:not(:-ms-input-placeholder):valid {
+  background-color: rgb(224, 237, 236);
+}
+
+.form input:not(:placeholder-shown):valid {
+  background-color: rgb(224, 237, 236);
 }
 
 .required {
   color: red;
   margin: 0;
   display: inline-block;
+}
+
+.booking-button {
+  color: rgb(240, 226, 207);
+  border: 5px solid rgb(79, 25, 11);
+  background-color: rgb(131, 86, 29);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.booking-button:hover {
+  background-color: rgb(79, 25, 11);
+  border: 5px solid rgb(131, 86, 29);
+}
+
+.booking-button:active {
+  background-color: rgb(240, 226, 207);
+  border: 5px solid rgb(131, 86, 29);
+  color: rgb(79, 25, 11);
 }/*# sourceMappingURL=booking.css.map */
