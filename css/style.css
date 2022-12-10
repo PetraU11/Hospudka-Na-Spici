@@ -1,4 +1,13 @@
-@charset "UTF-8";
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(247, 219, 181);
+}
+
 .header {
   background-color: rgb(240, 226, 207);
   background-image: url(../images/bar.jpg);
@@ -65,7 +74,7 @@
 .footer {
   text-align: center;
   padding: 20px;
-  background-color: rgb(160, 105, 34);
+  background-color: rgb(166, 100, 15);
   color: rgb(240, 226, 207);
   margin-top: -80px;
 }
@@ -176,7 +185,7 @@
   width: 115px;
   height: 115px;
   border-radius: 50%;
-  border: 5px solid #4f190b;
+  border: 5px solid rgb(79, 25, 11);
   margin-bottom: 15px;
   background-color: rgb(131, 86, 29);
 }
@@ -189,14 +198,14 @@
 }
 
 .button:hover {
-  background-color: #4f190b;
+  background-color: rgb(79, 25, 11);
   border: 5px solid rgb(131, 86, 29);
 }
 
 .button:active {
   background-color: rgb(240, 226, 207);
   border: 5px solid rgb(131, 86, 29);
-  color: #4f190b;
+  color: rgb(79, 25, 11);
 }
 
 span {
@@ -246,28 +255,19 @@ span {
   }
 }
 
-/* Proměnné */
-*, :after, :before {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-  background-color: rgb(247, 219, 181);
-}
-
 .main {
-  border: 2px solid #4f190b;
+  display: grid;
   position: relative;
   z-index: 1;
   top: -45px;
   bottom: 150px;
-  background-color: rgb(240, 226, 207);
-  display: grid;
   width: 90vw;
   margin-left: auto;
   margin-right: auto;
+  border: 2px solid rgb(79, 25, 11);
+  background-color: rgb(240, 226, 207);
+  color: rgb(79, 25, 11);
+  text-align: center;
 }
 @media screen and (min-width: 1000px) {
   .main {
@@ -278,7 +278,6 @@ body {
 .perex {
   margin-top: 30px;
   margin-bottom: 30px;
-  text-align: center;
   margin-left: 10px;
   margin-right: 10px;
   grid-row: 3/4;
@@ -302,7 +301,6 @@ body {
 
 .news {
   margin: 30px auto;
-  text-align: center;
   grid-row: 6/7;
 }
 @media screen and (min-width: 1000px) {
@@ -316,7 +314,6 @@ body {
 
 .hours {
   margin: 30px auto;
-  text-align: center;
 }
 @media screen and (min-width: 1000px) {
   .hours {
@@ -326,7 +323,6 @@ body {
 }
 
 .address {
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }

@@ -1,39 +1,30 @@
+@use 'body';
 @use 'header-about';
 @use 'footer-about';
 @use 'buttons-catering';
 @use 'primary-logos-catering';
 
-
-*, :after, :before { box-sizing: border-box; }
-
-/* Proměnné */
 $c-background:rgb(247, 219, 181); 
 $c-lines:rgb(166, 100, 15);
 $c-h1: rgb(240, 226, 207);
 $c-primary: rgb(240, 226, 207);
-$c-text: #4f190b;
+$c-text: rgb(79, 25, 11);
+$c-button:rgb(131, 86, 29);
 $gap-row: 20px;
-
-
-body {margin: 0;
-    font-family: 'Montserrat', sans-serif; 
-    background-color: $c-background;}
-
-
 
 .main {
     position: relative;
     z-index: 1;
     top: -45px;
     bottom: 150px;
-    border: 2px solid $c-text;
-    background-color: $c-primary; 
     width: 90vw;
-    height: auto;
-    color: $c-text;
     margin-left: auto;
     margin-right:auto;
+    border: 2px solid $c-text;
+    background-color: $c-primary; 
+    color: $c-text;
     text-align: center;
+    padding: 5px;
 
    
     @media screen and (min-width: 1000px) {
@@ -55,11 +46,6 @@ body {margin: 0;
     
 
 
-.main > div {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
 hr {
     border: 1px solid $c-lines;
 margin-left: 40px;
@@ -72,7 +58,7 @@ margin-right: 40px;
 
 .main__contact > a {
     text-decoration: none;
-    color:#4f190b;
+    color:$c-text;
 }
 
 

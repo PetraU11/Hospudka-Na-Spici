@@ -1,29 +1,32 @@
+@use 'body';
 @use 'header';
 @use 'footer';
 @use 'buttons';
 @use 'primary-logos';
-@use 'body';
 
 $c-background:rgb(247, 219, 181); 
 $c-lines:rgb(166, 100, 15);
 $c-h1: rgb(240, 226, 207);
 $c-primary: rgb(240, 226, 207);
-$c-text: #4f190b;
+$c-text: rgb(79, 25, 11);
+$c-button:rgb(131, 86, 29);
 $gap-row: 20px;
 
 
 .main {
-    border: 2px solid $c-text;
+    display:grid;
     position: relative;
     z-index: 1;
     top: -45px;
     bottom: 150px;
-    background-color: $c-primary; 
-    display:grid;
     width: 90vw;
     margin-left: auto;
     margin-right:auto;
-   
+    border: 2px solid $c-text;
+    background-color: $c-primary; 
+    color: $c-text;
+    text-align: center;
+    
     @media screen and (min-width: 1000px) {
         grid-template-columns: 5% repeat(5, 1fr) 5%; }}
 
@@ -31,7 +34,6 @@ $gap-row: 20px;
 .perex {
 margin-top: 30px;
 margin-bottom: 30px;
-text-align: center;
 margin-left: 10px;
 margin-right: 10px;
 grid-row: 3 / 4;
@@ -53,7 +55,6 @@ margin-right: 40px; }
 
 .news {
 margin: 30px auto;
-text-align: center; 
 grid-row: 6 / 7;
 
     @media screen and (min-width: 1000px) {
@@ -67,7 +68,6 @@ grid-row: 6 / 7;
 
 
 .hours {margin: 30px auto;
-    text-align: center;
    
     @media screen and (min-width: 1000px) {
         grid-row: 6 / 7;
@@ -76,7 +76,6 @@ grid-row: 6 / 7;
 
 
 .address { 
-text-align: center;
 margin-left: auto;
 margin-right:auto;
    

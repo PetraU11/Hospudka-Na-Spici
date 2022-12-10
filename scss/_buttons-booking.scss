@@ -1,9 +1,12 @@
 $c-background:rgb(247, 219, 181); 
 $c-lines:rgb(166, 100, 15);
+$c-footer: rgb(166, 100, 15);
 $c-h1: rgb(240, 226, 207);
 $c-primary: rgb(240, 226, 207);
-$c-text: #4f190b;
-
+$c-footer-text: rgb(240, 226, 207);
+$c-text: rgb(79, 25, 11);
+$c-button:rgb(131, 86, 29);
+$gap-row: 20px;
 
 
 .button {
@@ -16,7 +19,7 @@ $c-text: #4f190b;
     border-radius: 50%;
     border: 5px solid $c-text;
     margin-bottom: 15px;
-    background-color: rgb(131, 86, 29);
+    background-color: $c-button;
     display:none;
   
     @media screen and (min-width: 1000px) {
@@ -27,11 +30,11 @@ $c-text: #4f190b;
 
 .button:hover {
     background-color:$c-text;
-    border: 5px solid rgb(131, 86, 29);}
+    border: 5px solid $c-button;}
 
 .button:active {
     background-color:$c-primary;
-    border: 5px solid rgb(131, 86, 29);
+    border: 5px solid $c-button;
     color: $c-text;}
 
 span {
@@ -53,5 +56,5 @@ padding-right: 5px;
 
     @media screen and (min-width: 1000px) {  
     background-color:$c-text;
-    border: 5px solid rgb(131, 86, 29);}
+    border: 5px solid $c-button;}
 }

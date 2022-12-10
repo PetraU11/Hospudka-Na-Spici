@@ -1,4 +1,13 @@
-@charset "UTF-8";
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(247, 219, 181);
+}
+
 .header {
   background-color: rgb(240, 226, 207);
   background-image: url(../images/bar.jpg);
@@ -168,7 +177,7 @@
 .footer {
   text-align: center;
   padding: 20px;
-  background-color: rgb(160, 105, 34);
+  background-color: rgb(166, 100, 15);
   color: rgb(240, 226, 207);
   margin-top: -70px;
 }
@@ -282,7 +291,7 @@
   width: 115px;
   height: 115px;
   border-radius: 50%;
-  border: 5px solid #4f190b;
+  border: 5px solid rgb(79, 25, 11);
   margin-bottom: 15px;
   background-color: rgb(131, 86, 29);
   display: none;
@@ -297,14 +306,14 @@
 }
 
 .button:hover {
-  background-color: #4f190b;
+  background-color: rgb(79, 25, 11);
   border: 5px solid rgb(131, 86, 29);
 }
 
 .button:active {
   background-color: rgb(240, 226, 207);
   border: 5px solid rgb(131, 86, 29);
-  color: #4f190b;
+  color: rgb(79, 25, 11);
 }
 
 span {
@@ -327,7 +336,7 @@ span {
 }
 @media screen and (min-width: 1000px) {
   .button.catering {
-    background-color: #4f190b;
+    background-color: rgb(79, 25, 11);
     border: 5px solid rgb(131, 86, 29);
   }
 }
@@ -366,30 +375,19 @@ span {
   }
 }
 
-*, :after, :before {
-  box-sizing: border-box;
-}
-
-/* Proměnné */
-body {
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-  background-color: rgb(247, 219, 181);
-}
-
 .main {
   position: relative;
   z-index: 1;
   top: -45px;
   bottom: 150px;
-  border: 2px solid #4f190b;
-  background-color: rgb(240, 226, 207);
   width: 90vw;
-  height: auto;
-  color: #4f190b;
   margin-left: auto;
   margin-right: auto;
+  border: 2px solid rgb(79, 25, 11);
+  background-color: rgb(240, 226, 207);
+  color: rgb(79, 25, 11);
   text-align: center;
+  padding: 5px;
 }
 @media screen and (min-width: 1000px) {
   .main {
@@ -416,11 +414,6 @@ body {
   }
 }
 
-.main > div {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
 hr {
   border: 1px solid rgb(166, 100, 15);
   margin-left: 40px;
@@ -433,5 +426,5 @@ hr {
 
 .main__contact > a {
   text-decoration: none;
-  color: #4f190b;
+  color: rgb(79, 25, 11);
 }/*# sourceMappingURL=catering.css.map */
