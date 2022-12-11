@@ -109,3 +109,11 @@ font-size: 1.2em;}
     border: 5px solid $c-button;
     color: $c-text;}
 
+
+
+.booking-sent {grid-row: 3 / 4;
+    grid-column: 1 / -1;
+max-width: 700px;
+margin-left: auto;
+margin-right: auto;
+}

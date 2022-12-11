@@ -51,7 +51,7 @@ body {
   max-height: 100px;
   text-align: left;
   color: rgb(240, 226, 207);
-  font-size: 120%;
+  font-size: 140%;
   padding: 10px;
 }
 @media screen and (min-width: 500px) {
@@ -510,4 +510,12 @@ form {
   background-color: rgb(240, 226, 207);
   border: 5px solid rgb(131, 86, 29);
   color: rgb(79, 25, 11);
+}
+
+.booking-sent {
+  grid-row: 3/4;
+  grid-column: 1/-1;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }/*# sourceMappingURL=booking.css.map */
