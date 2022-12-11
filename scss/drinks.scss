@@ -1,0 +1,52 @@
+@use 'body';
+@use 'header-about';
+@use 'footer-about';
+@use 'buttons-drinks';
+@use 'primary-logos-drinks';
+
+$c-background:rgb(247, 219, 181); 
+$c-lines:rgb(166, 100, 15);
+$c-h1: rgb(240, 226, 207);
+$c-primary: rgb(240, 226, 207);
+$c-text: rgb(79, 25, 11);
+$c-button:rgb(131, 86, 29);
+$gap-row: 20px;
+
+.main {
+    position: relative;
+    z-index: 1;
+    top: -45px;
+    bottom: 150px;
+    width: 90vw;
+    margin-left: auto;
+    margin-right:auto;
+    border: 2px solid $c-text;
+    background-color: $c-primary; 
+    color: $c-text;
+    text-align: center;
+    padding: 5px;
+
+   
+    @media screen and (min-width: 1000px) {
+        display:grid;
+        grid-template-columns: 5% repeat(6, 1fr) 5%;
+       
+
+
+    }}
+  
+
+.drinks__menu {
+    display:block;
+    background-color: $c-text;
+    color:rgb(240, 226, 207);
+    text-decoration: none;
+    border-bottom: 1px solid;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+.drinks__menu:hover {
+    background-color: $c-lines;
+}
