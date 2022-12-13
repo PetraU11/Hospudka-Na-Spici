@@ -10,8 +10,8 @@ body {
 
 .header {
   background-color: rgb(240, 226, 207);
-  background-image: url(../images/bar.jpg);
-  height: 320px;
+  background-image: url(../images/spice_header.jpg);
+  height: 350px;
   background-size: cover;
   border-bottom: 15px solid rgb(166, 100, 15);
 }
@@ -393,6 +393,7 @@ span {
   .main {
     display: grid;
     grid-template-columns: 5% repeat(6, 1fr) 5%;
+    row-gap: 20px;
   }
   .main__intro {
     grid-column: 2/8;
@@ -421,10 +422,47 @@ hr {
 }
 
 .pricing__photo {
-  width: 50%;
+  width: 70%;
+  border: 2px solid rgb(79, 25, 11);
+  border-radius: 5px;
 }
 
 .main__contact > a {
   text-decoration: none;
   color: rgb(79, 25, 11);
+}
+
+.main__contacts {
+  display: block;
+}
+@media screen and (min-width: 1000px) {
+  .main__contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+/*
+.main__contact {display:flex;
+flex-wrap: wrap;}
+
+.main__contact > h2 {flex-basis: 100%;}
+
+.main__contacts {flex-basis: 100%;
+}
+*/
+@media screen and (min-width: 1000px) {
+  .main__contacts {
+    margin-left: 55px;
+  }
+}
+
+.contacts__type:nth-last-child(2) {
+  margin-left: 10px;
+  margin-right: 10px;
 }/*# sourceMappingURL=catering.css.map */

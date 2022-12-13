@@ -10,8 +10,8 @@ body {
 
 .header {
   background-color: rgb(240, 226, 207);
-  background-image: url(../images/bar.jpg);
-  height: 320px;
+  background-image: url(../images/spice_header.jpg);
+  height: 350px;
   background-size: cover;
   border-bottom: 15px solid rgb(166, 100, 15);
 }
@@ -376,6 +376,7 @@ span {
 }
 
 .main {
+  display: grid;
   position: relative;
   z-index: 1;
   top: -45px;
@@ -391,7 +392,6 @@ span {
 }
 @media screen and (min-width: 1000px) {
   .main {
-    display: grid;
     grid-template-columns: 5% repeat(6, 1fr) 5%;
   }
 }/*# sourceMappingURL=about.css.map */

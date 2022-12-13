@@ -30,6 +30,7 @@ $gap-row: 20px;
     @media screen and (min-width: 1000px) {
         display:grid;
         grid-template-columns: 5% repeat(6, 1fr) 5%;
+        row-gap: 20px;
        
         &__intro { grid-column: 2 / 8;
             grid-row: 2 / 3;} 
@@ -53,7 +54,9 @@ margin-right: 40px;
 }
 
 .pricing__photo {
-    width: 50%;
+    width: 70%;
+    border: 2px solid $c-text;
+    border-radius: 5px;
 }
 
 .main__contact > a {
@@ -61,11 +64,35 @@ margin-right: 40px;
     color:$c-text;
 }
 
+.main__contacts {
+    display:block;
 
+    @media screen and (min-width: 1000px) {display:flex;
+        justify-content: center;
+        align-items: center;
+   
+}}
 
+h2 {font-size: 1.2em;}
 
+/*
+.main__contact {display:flex;
+flex-wrap: wrap;}
 
+.main__contact > h2 {flex-basis: 100%;}
 
+.main__contacts {flex-basis: 100%;
+}
+*/
 
+.main__contacts {
+    @media screen and (min-width: 1000px) {
+        margin-left: 55px;
+    }  
+}
+.contacts__type:nth-last-child(2){
+    margin-left: 10px;
+    margin-right: 10px;
 
-    
+}
+

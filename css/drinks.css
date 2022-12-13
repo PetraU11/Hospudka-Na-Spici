@@ -10,8 +10,8 @@ body {
 
 .header {
   background-color: rgb(240, 226, 207);
-  background-image: url(../images/bar.jpg);
-  height: 320px;
+  background-image: url(../images/spice_header.jpg);
+  height: 350px;
   background-size: cover;
   border-bottom: 15px solid rgb(166, 100, 15);
 }
@@ -407,4 +407,12 @@ span {
 
 .drinks__menu:hover {
   background-color: rgb(166, 100, 15);
+}
+
+.drinks {
+  text-align: center;
+}
+
+div {
+  text-align: left;
 }/*# sourceMappingURL=drinks.css.map */

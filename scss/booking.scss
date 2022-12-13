@@ -36,9 +36,11 @@ $gap-row: 20px;
 .booking__info {
     grid-row: 2/3;
 
+
     @media screen and (min-width: 1000px) {
         grid-column: 5 / 8;
-        grid-row:3 / 4;}}
+        grid-row:2 / 3;
+    margin-top: 40px;}}
 
 form {
     margin-top: 40px;

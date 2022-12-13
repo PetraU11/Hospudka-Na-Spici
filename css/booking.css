@@ -10,8 +10,8 @@ body {
 
 .header {
   background-color: rgb(240, 226, 207);
-  background-image: url(../images/bar.jpg);
-  height: 320px;
+  background-image: url(../images/spice_header.jpg);
+  height: 350px;
   background-size: cover;
   border-bottom: 15px solid rgb(166, 100, 15);
 }
@@ -402,7 +402,8 @@ span {
 @media screen and (min-width: 1000px) {
   .booking__info {
     grid-column: 5/8;
-    grid-row: 3/4;
+    grid-row: 2/3;
+    margin-top: 40px;
   }
 }
 

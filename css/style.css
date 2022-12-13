@@ -10,9 +10,9 @@ body {
 
 .header {
   background-color: rgb(240, 226, 207);
-  background-image: url(../images/bar.jpg);
-  height: 320px;
+  background-image: url(../images/spice_header.jpg);
   background-size: cover;
+  height: 350px;
   border-bottom: 15px solid rgb(166, 100, 15);
 }
 
