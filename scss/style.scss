@@ -2,7 +2,7 @@
 @use 'header';
 @use 'footer';
 @use 'buttons';
-@use 'primary-logos';
+@use 'primary-logos_homepage';
 
 $c-background:rgb(247, 219, 181); 
 $c-lines:rgb(166, 100, 15);
@@ -26,7 +26,7 @@ $gap-row: 20px;
     background-color: $c-primary; 
     color: $c-text;
     text-align: center;
-    
+   
     @media screen and (min-width: 1000px) {
         grid-template-columns: 5% repeat(5, 1fr) 5%; }}
 

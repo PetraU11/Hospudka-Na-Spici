@@ -10,7 +10,7 @@ $gap-row: 20px;
 
 .header {
     background-color: $c-primary; 
-    background-image: url(../images/spice_header.jpg);;
+    background-image: url(../images/spice_header.jpg);
     height: 350px;
     background-size: cover;
     border-bottom:15px solid $c-lines; 
@@ -73,12 +73,16 @@ $gap-row: 20px;
         width: 100px;
        height: 100px;}}
       
+   
        
+
+
 .menu {
 position:absolute;
-  z-index: 2;
-  right: -70px;
-  height: 60px;
+left: 90%;
+z-index: 2;
+height: 60px;
+margin-top: 10px;
 
 
   @media screen and (min-width: 1000px) {
@@ -91,11 +95,8 @@ position:absolute;
 
 .menu__toggler { cursor:pointer;}
   
-.hamburger {
-   width: 30%;}
-
 .bar { 
-display: inline-block;
+display: block;
 width: 35px;
 height: 5px;
 background-color: $c-lines;;
@@ -103,22 +104,28 @@ border-radius: 10%;
 margin-top: 5px;
 }
 
+.bar:nth-child(2) {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 80%;
+  margin-right: auto;
+  margin-left:auto;
+}
+
   .menu__list {
-      margin: 0;
-      margin-right: 70px;
-      margin-top: 85px;
       padding: 0;
       list-style: none;
       background-color: $c-lines;
-      display:none; 
-    
-      @media screen and (min-width: 500px) {
-      margin-top: 102px;
-    }}
+      display:none;
+      position:absolute;
+      transform: translate(-72%, 32%); /*500px to sedí */
+    }
 
   
-  .menu__item { border-bottom: 1px solid #4f190b;
-  text-align:right;}
+  .menu__item { border-bottom: 1px solid $c-primary;
+  text-align:right;
+  width: 160px;
+}
   
   .menu__link {
   display:block;
@@ -130,21 +137,14 @@ margin-top: 5px;
   .menu__link:hover {
       background-color: #4f190b; }
 
-.menu__checkbox:checked {position:absolute;
-top: 50px;}
-  
+
 .menu__checkbox:checked ~ .menu__list{
-display:inline-block;
+display:block;
 }
-
-
-
 
 .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(1) {
   position:absolute;
-  top: 25px;
-  right: 75px;
-  width: 45px;
+  top: 15px;
   transform:rotate(45deg);
   }
 
@@ -154,9 +154,7 @@ display:inline-block;
 
 .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(3) {
   position:absolute;
-  top: 25px;
-  right: 75px;
-  width: 45px;
+  top: 15px;
   transform:rotate(-45deg);
 }
   
