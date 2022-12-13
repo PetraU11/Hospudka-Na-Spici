@@ -348,7 +348,6 @@ span {
   transform: translateY(-50px);
   width: 110px;
   height: 110px;
-  display: none;
 }
 @media screen and (min-width: 1000px) {
   .main__logo-top {
@@ -359,19 +358,15 @@ span {
 }
 
 .main__logo-bottom {
-  display: inline-block;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-  transform: translateY(60px);
   width: 110px;
   height: 110px;
 }
 @media screen and (min-width: 1000px) {
   .main__logo-bottom {
-    grid-row: 7/8;
-    grid-column: 4/5;
-    transform: translate(100px, 80px);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
   }
 }
 
