@@ -1,0 +1,60 @@
+---
+layout: layout.njk
+css: /css/style.css
+title: Hospůdka Na Špici
+---
+<body>
+
+    <header class="header"> 
+        <div class="header__container">
+          <div class="header__subcontainer"> 
+        <img class="header__logo" src="/images/logo-circle.png" alt="Logo">
+        <h1 class="header__heading"> Hospůdka <br> Na Špici</h1>
+          </div>
+
+        <nav class="menu">
+
+          <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+          <label for="menu-checkbox" class="menu__toggler">
+            <div class="hamburger">
+              <span class="bar">  </span>
+              <span class="bar"> </span>
+              <span class="bar"> </span>
+             </div>
+          </label>
+      
+            {% include 'partials_first-menu.njk'%}
+
+            </nav>
+           </div>
+    
+     </header>
+
+
+
+        {{content|safe}}
+
+
+
+      <footer class="footer">
+          <div class="footer__payment"> 
+            Možnosti platby: 
+            <div class="footer__payment-logo">
+            <img class="payment-logo" src="/images/banknotes.png" alt="bankovka">
+            <img class="payment-logo" src="/images/visa-48 (1).png" alt="logo visa">
+            <img class="payment-logo" src="/images/mastercard_brown.png" alt="logo mastercard">
+          </div>
+        </div>
+            
+            <div class="footer__info">
+            <p> Hospůdka Na Špici <br>
+            Svazacká 1b,
+            700 30 Ostrava <br>
+            IČ: 42762529 </p>
+            </div>
+            
+     
+  
+  
+
+</body>

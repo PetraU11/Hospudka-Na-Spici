@@ -1,7 +1,7 @@
 @use 'body';
 @use 'header';
 @use 'footer';
-@use 'buttons';
+@use 'buttons-homepage';
 @use 'primary-logos_homepage';
 
 $c-background:rgb(247, 219, 181); 
@@ -74,7 +74,6 @@ grid-row: 6 / 7;
         grid-row: 6 / 7;
         grid-column: 3 / 6;
             } }
-
 
 .address { 
 margin-left: auto;
