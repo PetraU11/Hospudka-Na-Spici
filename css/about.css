@@ -322,15 +322,11 @@ span {
   padding-right: 5px;
 }
 
-.button.about {
+.button.active {
   display: block;
   transform: translateY(-50%);
-}
-@media screen and (min-width: 1000px) {
-  .button.about {
-    background-color: rgb(79, 25, 11);
-    border: 5px solid rgb(131, 86, 29);
-  }
+  background-color: rgb(79, 25, 11);
+  border: 5px solid rgb(131, 86, 29);
 }
 
 .main__logo-top {
@@ -378,4 +374,194 @@ span {
   .main {
     grid-template-columns: 5% repeat(6, 1fr) 5%;
   }
+}
+
+.booking__info {
+  grid-row: 2/3;
+}
+@media screen and (min-width: 1000px) {
+  .booking__info {
+    grid-column: 5/8;
+    grid-row: 2/3;
+    margin-top: 40px;
+  }
+}
+
+form {
+  margin-top: 40px;
+  width: 90%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-row: 3/4;
+}
+@media screen and (min-width: 1000px) {
+  form {
+    width: 100%;
+    grid-column: 2/5;
+    grid-row: 2/5;
+  }
+}
+
+.form {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1000px) {
+  .form {
+    display: inline-block;
+  }
+}
+
+.form label {
+  display: block;
+}
+@media screen and (min-width: 1000px) {
+  .form label {
+    display: inline-block;
+  }
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  border: 2px solid rgb(166, 100, 15);
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 5px 10px;
+  background-color: rgb(247, 219, 181);
+}
+@media screen and (min-width: 700px) {
+  .form input,
+.form textarea {
+    flex: 1 1 100%;
+  }
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: 0;
+  border: 2px solid rgb(79, 25, 11);
+}
+
+.form input:-moz-placeholder-shown {
+  background-color: bisque;
+}
+
+.form input:-ms-input-placeholder {
+  background-color: bisque;
+}
+
+.form input:placeholder-shown {
+  background-color: bisque;
+}
+
+.form input:not(:-moz-placeholder-shown):valid {
+  background-color: rgb(224, 237, 236);
+}
+
+.form input:not(:-ms-input-placeholder):valid {
+  background-color: rgb(224, 237, 236);
+}
+
+.form input:not(:placeholder-shown):valid {
+  background-color: rgb(224, 237, 236);
+}
+
+.required {
+  color: red;
+  margin: 0;
+  display: inline-block;
+}
+
+.booking-button {
+  color: rgb(240, 226, 207);
+  border: 5px solid rgb(79, 25, 11);
+  background-color: rgb(131, 86, 29);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+
+.booking-button:hover {
+  background-color: rgb(79, 25, 11);
+  border: 5px solid rgb(131, 86, 29);
+}
+
+.booking-button:active {
+  background-color: rgb(240, 226, 207);
+  border: 5px solid rgb(131, 86, 29);
+  color: rgb(79, 25, 11);
+}
+
+.booking-sent {
+  grid-row: 3/4;
+  grid-column: 1/-1;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  border: 1px solid rgb(166, 100, 15);
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.pricing__photo {
+  width: 70%;
+  border: 2px solid rgb(79, 25, 11);
+  border-radius: 5px;
+}
+
+.main__contact > a {
+  text-decoration: none;
+  color: rgb(79, 25, 11);
+}
+
+.main__contacts {
+  display: block;
+}
+@media screen and (min-width: 1000px) {
+  .main__contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+@media screen and (min-width: 1000px) {
+  .main__contacts {
+    margin-left: 55px;
+  }
+}
+
+.contacts__type:nth-last-child(2) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.drinks__menu-item {
+  display: block;
+  background-color: rgb(79, 25, 11);
+  color: rgb(240, 226, 207);
+  text-decoration: none;
+  border-bottom: 1px solid;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.drinks__menu-item:hover {
+  background-color: rgb(166, 100, 15);
+}
+
+.drinks.menu {
+  text-align: center;
+}
+
+.drinks {
+  text-align: left;
 }/*# sourceMappingURL=about.css.map */

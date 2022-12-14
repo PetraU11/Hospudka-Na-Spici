@@ -322,15 +322,11 @@ span {
   padding-right: 5px;
 }
 
-.button.drinks {
+.button.active {
   display: block;
   transform: translateY(-50%);
-}
-@media screen and (min-width: 1000px) {
-  .button.drinks {
-    background-color: rgb(79, 25, 11);
-    border: 5px solid rgb(131, 86, 29);
-  }
+  background-color: rgb(79, 25, 11);
+  border: 5px solid rgb(131, 86, 29);
 }
 
 .main__logo-top {
@@ -394,10 +390,10 @@ span {
   background-color: rgb(166, 100, 15);
 }
 
-.drinks {
+.drinks.menu {
   text-align: center;
 }
 
-div {
+.drinks {
   text-align: left;
 }/*# sourceMappingURL=drinks.css.map */

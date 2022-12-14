@@ -1,22 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/about.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.pkng">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <title> {{title}} </title>
-</head>
+---
+layout: layout.njk
+css: /css/about.css
+title: {{title}}
+---
 <body>
-
-  
 
     <header class="header"> 
         <div class="header__container">
@@ -25,7 +12,6 @@
         <h1 class="header__heading"> Hospůdka <br> Na Špici</h1>
           </div>
 
-         
         <nav class="menu">
 
           <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
@@ -37,7 +23,7 @@
              </div>
           </label>
       
-            {% include 'partials_about-menu.njk'%}
+            {% include 'partials_first-menu.njk'%}
 
             </nav>
            </div>
@@ -45,8 +31,28 @@
      </header>
 
 
+<main class="main"> 
 
-        {{content|safe}}
+     <img class="main__logo-top" src="/images/logo-circle.png" alt="Logo">
+
+     <a class="button{{ ' active' if page.fileSlug === ''}}" href="/"> <span class="span__homepage"> Úvod </span></a>
+     <a class="button{{ ' active' if page.fileSlug === 'about'}}"href="/"> <span class="span__about"> O nás </span></a>
+     <a class="button{{ ' active' if page.fileSlug === 'events'}}"  href="/events/"> <span class="span__events"> Aktuality & Akce </span></a> 
+     <a class="button{{ ' active' if page.fileSlug === 'booking'}}" href="/booking/"> <span class="span__booking"> Rezervace </span> </a> 
+     <a class="button{{ ' active' if page.fileSlug === 'drinks'}}" href="/drinks/"> <span class="span__drinks"> Nápojový lístek</span></a> 
+     <a class="button{{ ' active' if page.fileSlug === 'catering'}}" href="/catering/"> <span class="span__catering"> Catering </span></a>
+    
+     
+      <img class="main__logo-bottom" src="/images/logo-circle.png" alt="Logo">
+     
+     
+
+ {{content|safe}}
+
+
+        
+        </main>
+        
 
 
 
@@ -94,7 +100,8 @@
         </footer>
         
   
+     
+  
   
 
 </body>
-</html>
