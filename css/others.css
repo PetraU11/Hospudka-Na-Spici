@@ -525,21 +525,36 @@ form {
   text-align: left;
 }
 
-hr {
-  border: 1px solid rgb(166, 100, 15);
-  margin-left: 40px;
-  margin-right: 40px;
+@media screen and (min-width: 1000px) {
+  .catering__intro {
+    grid-column: 2/8;
+  }
 }
 
-ul {
-  list-style: none;
+@media screen and (min-width: 1000px) {
+  .catering__description {
+    grid-column: 3/7;
+  }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
+  .catering__pricing {
+    grid-column: 2/8;
+  }
+}
+
+@media screen and (min-width: 750px) {
   .catering__pricing-size {
     display: flex;
     justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
+}
+
+.pricing-size {
+  display: flex;
+  justify-content: center;
 }
 
 .pricing-size:nth-child(2) {
@@ -550,8 +565,6 @@ ul {
 .size {
   color: rgb(79, 25, 11);
   padding-top: 28px;
-  margin-left: auto;
-  margin-right: auto;
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -564,6 +577,18 @@ ul {
   width: 70%;
   border: 2px solid rgb(79, 25, 11);
   border-radius: 5px;
+}
+
+@media screen and (min-width: 1000px) {
+  .catering__orders {
+    grid-column: 3/7;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .catering__contact {
+    grid-column: 2/8;
+  }
 }
 
 .catering__contact > a {
@@ -582,10 +607,6 @@ ul {
   }
 }
 
-h2 {
-  font-size: 1.2em;
-}
-
 @media screen and (min-width: 1000px) {
   .catering__contacts {
     margin-left: 55px;
@@ -593,6 +614,16 @@ h2 {
 }
 
 .contacts__type:nth-last-child(2) {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+hr {
+  border: 1px solid rgb(166, 100, 15);
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+h2 {
+  font-size: 1.2em;
 }/*# sourceMappingURL=others.css.map */
