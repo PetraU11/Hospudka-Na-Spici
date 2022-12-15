@@ -128,6 +128,13 @@ form {
 
 // drinks - Nápojový lístek // 
 
+.drinks__menu {
+
+    @media screen and (min-width: 1000px) {
+        grid-column: 2 / 8;
+    }
+}
+
 .drinks__menu-item {
     display:block;
     background-color: $c-text;
@@ -136,15 +143,33 @@ form {
     border-bottom: 1px solid;
     padding: 5px;
     border-radius: 10px;
-}
+    padding:15px 0;}
 
 .drinks__menu-item:hover {
     background-color: $c-lines;
 }
 
-.drinks.menu {text-align: center;}
+.drinks__list.menu {text-align: center;}
 
-.drinks {text-align:left;}
+.drinks__list {
+    
+    text-align:left;
+   
+margin-top: 40px;}
+
+table { width: 100%;
+margin-left: 20px;}
+
+.drinks.beer {
+    @media screen and (min-width: 1000px) { grid-column: 1 / 2;
+}}
+
+.drinks.cider {
+    @media screen and (min-width: 1000px) { grid-column: 2 / 3;
+    }}
+
+
+
 
 
 // Catering // 

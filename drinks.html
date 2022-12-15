@@ -3,9 +3,8 @@ layout: layout_others.njk
 title: Nápojový lístek
 ---
 
-<div class="drinks_menu"> 
+<div class="drinks__menu"> 
     <a class="drinks__menu-item" href="#drinks__beer"> Pivo </a>
-    <a class="drinks__menu-item" href="#drinks__non-alc-beers">Nealkoholické pivo </a>
     <a class="drinks__menu-item" href="#drinks__cider"> Cidery </a>
     <a class="drinks__menu-item" href="#drinks__non-alc-drinks"> Nealkoholické nápoje </a>
     <a class="drinks__menu-item" href="#drinks__hot"> Teplé nápoje </a>
@@ -15,84 +14,72 @@ title: Nápojový lístek
 
 
 
-<div class="drinks"> 
-<table>
-<tr id="drinks__beer"> Pivo </tr>
-<tr > <td>Radegast čep 12°  </td> <td> 0.5l </td> <td> 39Kč</td></tr> 
+<div class="drinks__list"> 
+
+<div> </div>
+
+<table class="drinks beer">
+<th id="drinks__beer"> Pivo</th>
+<tr> <td style="width:70%">Radegast čep 12°  </td> <td style="width:10%"> 0.5l </td> <td> 39Kč</td></tr> 
 <tr> <td>Radegast čep 12°  </td> <td> 0.3l </td> <td> 24 Kč</td></tr> 
 <tr> <td>Radegast čep 10°  </td> <td> 0.5l </td> <td> 34 Kč</td></tr> 
 <tr> <td>Radegast čep 10°  </td> <td> 0.3l </td> <td> 21 Kč</td></tr> 
 <tr> <td>Radegast plech  </td> <td> 0.5l</td><td> 39 Kč</td></tr> 
- </table>
- </div>
-
-
- <div class="drinks"> 
- <table>
-<tr id="drinks__non-alc-beers"> <td> Nealko pivo </td> </tr>
 <tr> <td>Birell čep  </td> <td> 0.5l </td><td> 36 Kč</td></tr> 
 <tr> <td>Birell čep  </td> <td> 0.3l </td><td> 22 Kč</td></tr> 
 <tr> <td>Birell plech  </td> <td> 0.5l </td><td> 39 Kč</td></tr> 
 <tr> <td>Birell ochucený plech  </td> <td> 0.5l </td><td> 34 Kč</td></tr> 
 </table>
-</div>
 
-<div class="drinks"> 
-<table>
-<tr id="drinks__cider"> Cidery </tr>
-<tr> <td>Frisco </td> <td></td><td> 41 Kč</td></tr> 
-<tr> <td>Kingswood</td> <td></td><td> 43 Kč</td></tr> 
+
+<table class="drinks cider">
+<th id="drinks__cider"> Cidery </th>
+<tr> <td  style="width:70%">Frisco </td> <td style="width:10%"> </td> <td style="width:20%"> 41 Kč</td></tr> 
+<tr> <td>Kingswood</td> <td></td> <td> 43 Kč</td></tr> 
 </table>
-</div>
 
-<div class="drinks"> 
-<table>
-<tr id="drinks__non-alc-drinks"> Nealkoholické nápoje</tr>
- <tr> <td>Kofola čep</td> <td> 0.5l </td><td>40 Kč</td></tr> 
+<table class="drinks non-alc">
+<th id="drinks__non-alc-drinks"> Nealkoholické nápoje</th>
+ <tr> <td style="width:70%">Kofola čep</td> <td style="width:10%"> 0.5l </td><td>40 Kč</td></tr> 
 <tr> <td>Kofola čep</td> <td> 0.5l </td><td>24 Kč</td></tr> 
-<tr> <td>Pepsi Cola / Pepsi Cola zero</td> <td> 0.25l </td><td>35 Kč</td></tr> 
-<tr> <td>Pepsi Cola / Pepsi Cola zero</td> <td> 0.25l </td><td>35 Kč</td></tr> 
+<tr> <td>Pepsi Cola </td> <td> 0.25l </td><td>35 Kč</td></tr> 
+<tr> <td>Pepsi Cola zero</td> <td> 0.25l </td><td>35 Kč</td></tr> 
 <tr> <td>Kinley Tonic </td> <td> 0.25l </td><td> 49 Kč</td></tr> 
 <tr> <td>Toma džus dle nabídky </td> <td> 0.25l  </td><td>35 Kč</td></tr> 
 <tr> <td>Lipton ledový čaj  </td> <td> 0.25l </td><td> 49 Kč</td></tr> 
 <tr> <td> Rajec  </td> <td> 0.33l </td><td> 23 Kč</td></tr> 
 <tr> <td> RedBull </td> <td> 0.25l </td><td> 55 Kč</td></tr> 
 </table>
-</div>
 
-<div class="drinks"> 
-<table>
-<tr id="drinks__hot"> Teplé nápoje</tr>
-<tr> <td> Espreso  </td> <td></td> </td><td> 29 Kč</td></tr> 
-<tr> <td> Turecká káva </td> <td> </td><td> 26 Kč</td></tr> 
-<tr> <td> Čaj dle nabídky  </td> <td> </td><td> 24 Kč</td></tr> 
-<tr> <td> + med / citrón  </td> <td>  </td><td> 4 Kč</td></tr> 
-<tr> <td> Grog  </td> <td>  </td><td> 40 Kč</td></tr> 
-<tr> <td> Svařák  </td> <td>  </td><td> 45 Kč</td></tr> 
+
+<table class="drinks hot">
+<th id="drinks__hot"> Teplé nápoje</th>
+<tr> <td style="width:70%">Espreso </td> <td style="width:10%"></td><td> 29 Kč</td></tr> 
+<tr> <td> Turecká káva</td> <td></td><td> 26 Kč</td></tr> 
+<tr> <td> Čaj dle nabídky</td> <td></td><td> 24 Kč</td></tr> 
+<tr> <td> + med / citrón</td> <td></td><td> 4 Kč</td></tr> 
+<tr> <td> Grog  </td><td></td><td> 40 Kč</td></tr> 
+<tr> <td> Svařák  </td><td></td><td> 45 Kč</td></tr> 
 </table>
-</div>
 
-<div class="drinks"> 
-<table>
-<tr id="drinks__wine"> Víno </tr>
-<tr> <td>Bílé rozlévané Chardonnay </td> <td>0.2l</td> <td> 36 Kč</td></tr> 
+<table class="drinks wine">
+<th id="drinks__wine"> Víno </th>
+<tr> <td style="width:70%">Bílé rozlévané Chardonnay</td> <td style="width:10%">0.2l</td> <td> 36 Kč</td></tr> 
 <tr> <td>Červené rozlévané Merlot</td> <td>0.2l</td> <td> 36 Kč</td></tr> 
 <tr> <td>Lahvové víno dle nabídky</td> <td>0.7l</td> <td> 210 Kč</td></tr> 
-</div> 
 </table>
 
-<div class="drinks"> 
-<table>
-<tr id="drinks__spirits"> Tvrdý alkohol </tr>
-<tr>  <td>Gin</td> <td>0.05l</td> <td> 44 Kč</td>  </tr> 
+<table class="drinks spirits">
+<th id="drinks__spirits"> Tvrdý alkohol </th>
+<tr>  <td style="width:70%">Gin</td> <td style="width:10%">0.05l</td> <td> 44 Kč</td>  </tr> 
 <tr>   <td>Amundsen vodka</td> <td>0.05l</td> <td>34 Kč</td>   </tr> 
 <tr>   <td>Absolut vodka</td> <td>0.05l</td> <td> 44 Kč</td>   </tr> 
 <tr>   <td>Puschin vodka </td> <td>0.05l</td> <td> 32 Kč</td>   </tr>
 <tr>   <td>Tullamore Dew</td> <td>0.05l</td> <td>49 Kč</td>   </tr> 
 <tr>   <td>Božkov rum</td> <td>0.05l</td> <td> 31 Kč</td>   </tr> 
 <tr>   <td>Božkov rum ochucený</td> <td>0.05l</td> <td> 32 Kč</td>   </tr> 
-<tr>   <td> Legendario rum </td> <td>0.05l</td> <td> 56 Kč</td>   </tr> 
-<tr>   <td> Bucanero rum </td> <td>0.05l</td> <td> 56 Kč</td>   </tr> 
+<tr>   <td>Legendario rum </td> <td>0.05l</td> <td> 56 Kč</td>   </tr> 
+<tr>   <td>Bucanero rum </td> <td>0.05l</td> <td> 56 Kč</td>   </tr> 
 <tr>   <td>Republika rum</td> <td>0.05l</td> <td> 48 Kč</td>   </tr> 
 <tr>   <td>Captain Morgan Spiced </td> <td>0.05l</td> <td> 42 Kč</td>  </tr>
 <tr>   <td>Jagermeister</td> <td>0.05l</td> <td> 49 Kč</td>   </tr> 
@@ -100,9 +87,11 @@ title: Nápojový lístek
 <tr>   <td>Fernet</td> <td>0.05l</td> <td> 39 Kč</td>   </tr> 
 <tr>   <td>Fernet Citrus</td> <td>0.05l</td> <td> 39 Kč</td>   </tr> 
 <tr>   <td>Slivovice</td> <td>0.05l</td> <td> 46 Kč</td>   </tr> 
-<tr>   <td> Hruškovice</td> <td>0.05l</td> <td> 39 Kč</td>   </tr> 
+<tr>   <td>Hruškovice</td> <td>0.05l</td> <td> 39 Kč</td>   </tr> 
 </table>
-</div>   
+
+
+</div>
 
 
 
