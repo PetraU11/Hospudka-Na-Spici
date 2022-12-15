@@ -501,8 +501,18 @@ form {
 }
 
 @media screen and (min-width: 1000px) {
-  .drinks__menu {
+  .drinks__perex {
     grid-column: 2/8;
+  }
+}
+
+.drinks__menu {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1000px) {
+  .drinks__menu {
+    display: none;
   }
 }
 
@@ -514,11 +524,16 @@ form {
   border-bottom: 1px solid;
   padding: 5px;
   border-radius: 10px;
-  padding: 15px 0;
+  padding: 20px 0;
 }
 
 .drinks__menu-item:hover {
   background-color: rgb(166, 100, 15);
+}
+
+.drinks__menu-item:active {
+  background-color: rgb(131, 86, 29);
+  color: rgb(79, 25, 11);
 }
 
 .drinks__list.menu {
@@ -527,24 +542,15 @@ form {
 
 .drinks__list {
   text-align: left;
-  margin-top: 40px;
+}
+@media screen and (min-width: 1000px) {
+  .drinks__list {
+    grid-column: 3/7;
+  }
 }
 
 table {
   width: 100%;
-  margin-left: 20px;
-}
-
-@media screen and (min-width: 1000px) {
-  .drinks.beer {
-    grid-column: 1/2;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .drinks.cider {
-    grid-column: 2/3;
-  }
 }
 
 @media screen and (min-width: 1000px) {
