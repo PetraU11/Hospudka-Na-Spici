@@ -288,7 +288,6 @@ body {
   height: 115px;
   border-radius: 50%;
   border: 5px solid rgb(79, 25, 11);
-  margin-bottom: 15px;
   background-color: rgb(131, 86, 29);
   display: none;
 }
@@ -373,6 +372,7 @@ span {
   color: rgb(79, 25, 11);
   text-align: center;
   padding: 5px;
+  padding-bottom: 120px;
 }
 @media screen and (min-width: 1000px) {
   .main {
@@ -387,12 +387,10 @@ span {
   .booking__info {
     grid-column: 5/8;
     grid-row: 2/3;
-    margin-top: 40px;
   }
 }
 
 form {
-  margin-top: 40px;
   width: 90%;
   max-width: 400px;
   margin-left: auto;
@@ -505,6 +503,28 @@ form {
   margin-right: auto;
 }
 
+.drinks__menu-item {
+  display: block;
+  background-color: rgb(79, 25, 11);
+  color: rgb(240, 226, 207);
+  text-decoration: none;
+  border-bottom: 1px solid;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.drinks__menu-item:hover {
+  background-color: rgb(166, 100, 15);
+}
+
+.drinks.menu {
+  text-align: center;
+}
+
+.drinks {
+  text-align: left;
+}
+
 hr {
   border: 1px solid rgb(166, 100, 15);
   margin-left: 40px;
@@ -546,26 +566,4 @@ h2 {
 .contacts__type:nth-last-child(2) {
   margin-left: 10px;
   margin-right: 10px;
-}
-
-.drinks__menu-item {
-  display: block;
-  background-color: rgb(79, 25, 11);
-  color: rgb(240, 226, 207);
-  text-decoration: none;
-  border-bottom: 1px solid;
-  padding: 5px;
-  border-radius: 10px;
-}
-
-.drinks__menu-item:hover {
-  background-color: rgb(166, 100, 15);
-}
-
-.drinks.menu {
-  text-align: center;
-}
-
-.drinks {
-  text-align: left;
 }/*# sourceMappingURL=about.css.map */
