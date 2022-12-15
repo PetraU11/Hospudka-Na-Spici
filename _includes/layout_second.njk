@@ -23,7 +23,7 @@ title: {{title}}
              </div>
           </label>
       
-            {% include 'partials_first-menu.njk'%}
+            {% include 'partials_menu.njk'%}
 
             </nav>
            </div>
@@ -36,7 +36,7 @@ title: {{title}}
      <img class="main__logo-top" src="/images/logo-circle.png" alt="Logo">
 
      <a class="button{{ ' active' if page.fileSlug === ''}}" href="/"> <span class="span__homepage"> Úvod </span></a>
-     <a class="button{{ ' active' if page.fileSlug === 'about'}}"href="/"> <span class="span__about"> O nás </span></a>
+     <a class="button{{ ' active' if page.fileSlug === 'about'}}"href="/about/"> <span class="span__about"> O nás </span></a>
      <a class="button{{ ' active' if page.fileSlug === 'events'}}"  href="/events/"> <span class="span__events"> Aktuality & Akce </span></a> 
      <a class="button{{ ' active' if page.fileSlug === 'booking'}}" href="/booking/"> <span class="span__booking"> Rezervace </span> </a> 
      <a class="button{{ ' active' if page.fileSlug === 'drinks'}}" href="/drinks/"> <span class="span__drinks"> Nápojový lístek</span></a> 

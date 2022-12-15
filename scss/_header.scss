@@ -74,7 +74,7 @@ $gap-row: 20px;
        height: 100px;}}
       
    
-       
+ //Hamburger menu//      
 
 
 .menu {
@@ -126,7 +126,11 @@ margin-top: 5px;
   text-align:right;
   width: 160px;
 }
-  
+
+  .menu__item.active { 
+    background-color: $c-text;
+  }
+
   .menu__link {
   display:block;
   padding: 15px;
@@ -135,7 +139,7 @@ margin-top: 5px;
   }
 
   .menu__link:hover {
-      background-color: #4f190b; }
+      background-color: $c-text; }
 
 
 .menu__checkbox:checked ~ .menu__list{

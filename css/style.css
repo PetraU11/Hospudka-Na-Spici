@@ -135,6 +135,10 @@ body {
   width: 160px;
 }
 
+.menu__item.active {
+  background-color: rgb(79, 25, 11);
+}
+
 .menu__link {
   display: block;
   padding: 15px;
@@ -143,7 +147,7 @@ body {
 }
 
 .menu__link:hover {
-  background-color: #4f190b;
+  background-color: rgb(79, 25, 11);
 }
 
 .menu__checkbox:checked ~ .menu__list {
