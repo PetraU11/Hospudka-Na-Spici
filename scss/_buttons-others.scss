@@ -22,7 +22,7 @@ $gap-row: 20px;
     display:none;
   
     @media screen and (min-width: 1000px) {
-        display:inline-block;
+        display:block;
         width: 115px;
         height: 115px; 
         transform: translateY(-50%);}}

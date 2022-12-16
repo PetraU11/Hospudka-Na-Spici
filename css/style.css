@@ -293,14 +293,13 @@ body {
   height: 115px;
   border-radius: 50%;
   border: 5px solid rgb(79, 25, 11);
-  margin-bottom: 15px;
   background-color: rgb(131, 86, 29);
 }
 @media screen and (min-width: 1000px) {
   .button {
     width: 115px;
     height: 115px;
-    transform: translateY(-50%);
+    transform: translateY(-130%);
   }
 }
 
@@ -329,6 +328,54 @@ span {
   padding-right: 5px;
 }
 
+.button.active {
+  display: block;
+  transform: translateY(-1250%);
+  background-color: rgb(79, 25, 11);
+  border: 5px solid rgb(131, 86, 29);
+}
+@media screen and (min-width: 1000px) {
+  .button.active {
+    grid-column: 2/3;
+    transform: translateY(-130%);
+  }
+}
+
+.button.about {
+  grid-row: 1/2;
+}
+@media screen and (min-width: 1000px) {
+  .button.about {
+    grid-column: 3/4;
+  }
+}
+
+.button.events {
+  grid-row: 3/4;
+}
+@media screen and (min-width: 1000px) {
+  .button.events {
+    grid-row: 1/2;
+  }
+}
+
+.button.booking {
+  grid-row: 5/6;
+}
+@media screen and (min-width: 1000px) {
+  .button.booking {
+    grid-column: 5/6;
+  }
+}
+
+.button.drinks {
+  grid-row: 7/8;
+}
+
+.button.catering {
+  grid-row: 9/10;
+}
+
 .main__logo-top {
   width: 110px;
   height: 110px;
@@ -336,9 +383,11 @@ span {
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: none;
 }
 @media screen and (min-width: 1000px) {
   .main__logo-top {
+    display: inline-block;
     position: relative;
     left: -9999px;
   }
@@ -371,49 +420,46 @@ span {
 }
 @media screen and (min-width: 1000px) {
   .main {
-    grid-template-columns: 5% repeat(5, 1fr) 5%;
+    grid-template-columns: 5% repeat(6, 1fr) 5%;
   }
 }
 
-.perex {
+.home__perex {
   margin-top: 30px;
   margin-bottom: 30px;
   margin-left: 10px;
   margin-right: 10px;
-  grid-row: 3/4;
-}
-@media screen and (min-width: 1000px) {
-  .perex {
-    grid-row: 2/3;
-    grid-column: 3/6;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-top: 0;
-  }
+  grid-row: 2/3;
 }
 
-.perex__hr {
-  border: 1px solid rgb(166, 100, 15);
+.home__hr {
+  border: 2px solid rgb(166, 100, 15);
   margin-left: 40px;
   margin-right: 40px;
 }
 
-.news {
-  margin: 30px auto;
+.home__news {
+  grid-row: 4/5;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.booking__text {
   grid-row: 6/7;
 }
-@media screen and (min-width: 1000px) {
-  .news {
-    grid-row: 3/4;
-    grid-column: 3/6;
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
+
+.drinks__text {
+  grid-row: 8/9;
+}
+
+.catering__text {
+  grid-row: 10/11;
 }
 
 .hours {
   margin: 30px auto;
+  display: none;
 }
 @media screen and (min-width: 1000px) {
   .hours {
@@ -425,6 +471,7 @@ span {
 .address {
   margin-left: auto;
   margin-right: auto;
+  display: none;
 }
 .address__pin {
   width: 1.5em;

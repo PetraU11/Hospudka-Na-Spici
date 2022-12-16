@@ -17,13 +17,12 @@ $gap-row: 20px;
     height: 115px;
     border-radius: 50%;
     border: 5px solid $c-text;
-    margin-bottom: 15px;
     background-color: $c-button;
-  
+    
     @media screen and (min-width: 1000px) {
         width: 115px;
         height: 115px; 
-        transform: translateY(-50%);}}
+        transform: translateY(-130%);}}
 
 .button:hover {
     background-color:$c-text;
@@ -48,3 +47,46 @@ padding-left: 5px;
 padding-right: 5px;
 }
 
+.button.active {
+    display:block;
+
+    transform: translateY(-1250%);
+    background-color:$c-text;
+    border: 5px solid $c-button;
+
+    @media screen and (min-width: 1000px) {
+        grid-column: 2 / 3;
+        transform: translateY(-130%);}}
+
+
+.button.about {
+    grid-row: 1 / 2;
+    
+    @media screen and (min-width: 1000px) {
+     grid-column: 3 / 4; 
+}}
+
+.button.events {
+    grid-row: 3 / 4;
+   
+
+    @media screen and (min-width: 1000px) {
+        grid-row: 1 / 2;
+   }
+}
+
+.button.booking {
+    grid-row: 5 / 6;
+
+    @media screen and (min-width: 1000px) {
+        grid-column: 5 / 6; 
+   }
+}
+
+.button.drinks {
+    grid-row: 7 / 8;
+}
+
+.button.catering {
+    grid-row: 9 / 10;
+}

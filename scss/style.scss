@@ -31,47 +31,38 @@ $gap-row: 20px;
     text-align: center;
    
     @media screen and (min-width: 1000px) {
-        grid-template-columns: 5% repeat(5, 1fr) 5%; }}
+        grid-template-columns: 5% repeat(6, 1fr) 5%; }}
 
         
-.perex {
+.home__perex {
 margin-top: 30px;
 margin-bottom: 30px;
 margin-left: 10px;
 margin-right: 10px;
-grid-row: 3 / 4;
-;
+grid-row: 2 / 3;
+}
 
-    @media screen and (min-width: 1000px) {
-        grid-row: 2 / 3;
-        grid-column: 3 / 6;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0;
-        margin-top: 0;
-}}
-
-.perex__hr {
-border: 1px solid $c-lines;
+.home__hr {
+border: 2px solid $c-lines;
 margin-left: 40px;
 margin-right: 40px; }
 
 
-.news {
-margin: 30px auto;
-grid-row: 6 / 7;
-
-    @media screen and (min-width: 1000px) {
-    grid-row: 3 / 4;
-    grid-column: 3 / 6;
-    margin-top: 0;
-    margin-bottom: 20px;
-
-   }
+.home__news {
+grid-row: 4 / 5;
+width: 90%;
+margin-left:auto;
+margin-right: auto;
 }
 
+.booking__text { grid-row: 6 / 7;}
+
+.drinks__text {grid-row: 8 / 9;}
+
+.catering__text {grid-row: 10 / 11;}
 
 .hours {margin: 30px auto;
+    display:none;
    
     @media screen and (min-width: 1000px) {
         grid-row: 6 / 7;
@@ -81,6 +72,7 @@ grid-row: 6 / 7;
 .address { 
 margin-left: auto;
 margin-right:auto;
+display:none;
    
 &__pin {width: 1.5em;
     margin-right: 5px; }
