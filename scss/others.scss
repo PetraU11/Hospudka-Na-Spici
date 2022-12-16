@@ -102,8 +102,8 @@ form {
        /* .form input:placeholder-shown {background-color:bisque;}*/
         .form input:not(:placeholder-shown):valid {
             background-color: $c-primary;} 
-        
-        
+       
+            
         .required {
             color: red;
             margin:0;

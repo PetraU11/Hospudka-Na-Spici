@@ -1,14 +1,13 @@
 ---
 layout: layout.njk
 css: /css/others.css
-title: {{title}}
 ---
 <body>
 
     <header class="header"> 
         <div class="header__container">
           <div class="header__subcontainer"> 
-        <img class="header__logo" src="/images/logo-circle.png" alt="Logo">
+        <img class="header__logo" src="/images/main-logo.png" alt="Logo">
         <h1 class="header__heading"> Hospůdka <br> Na Špici</h1>
           </div>
 
@@ -33,7 +32,7 @@ title: {{title}}
 
 <main class="main"> 
 
-     <img class="main__logo-top" src="/images/logo-circle.png" alt="Logo">
+     <img class="main__logo-top" src="/images/main-logo.png" alt="Logo">
 
      <a class="button{{ ' active' if page.fileSlug === ''}}" href="/"> <span class="span__homepage"> Úvod </span></a>
      <a class="button{{ ' active' if page.fileSlug === 'about'}}"href="/about/"> <span class="span__about"> O nás </span></a>
@@ -60,9 +59,9 @@ title: {{title}}
           <div class="footer__payment"> 
             Možnosti platby: 
             <div class="footer__payment-logo">
-            <img class="payment-logo" src="/images/banknotes.png" alt="bankovka">
-            <img class="payment-logo" src="/images/visa-48 (1).png" alt="logo visa">
-            <img class="payment-logo" src="/images/mastercard_brown.png" alt="logo mastercard">
+            <img class="payment-logo" src="/images/footer_banknotes.png" alt="bankovka">
+            <img class="payment-logo" src="/images/footer_visa.png" alt="logo visa">
+            <img class="payment-logo" src="/images/footer_mastercard.png" alt="logo mastercard">
           </div>
         </div>
             
@@ -76,10 +75,10 @@ title: {{title}}
         <div class="footer__contact">
             
             <div class="footer_contact-type"> 
-            <img class="contact-photo" src="/images/phone.png" alt="ikona telefonu" >
+            <img class="contact-photo" src="/images/footer_phone.png" alt="ikona telefonu" >
             <p>+420 777 777 777 </p> </div>  
             <div class="footer_contact-type"> 
-           <img class="contact-photo" src="/images/email.png" alt="ikona mailu">
+           <img class="contact-photo" src="/images/footer_email.png" alt="ikona mailu">
             <p> <a href="mailto:naspici@seznam.cz"> naspici@seznam.cz</a></p>
             </div>
         </div>
