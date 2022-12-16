@@ -112,7 +112,7 @@ body {
   display: block;
   width: 35px;
   height: 5px;
-  background-color: rgb(166, 100, 15);
+  background-color: rgb(240, 226, 207);
   border-radius: 10%;
   margin-top: 5px;
 }
@@ -382,8 +382,26 @@ span {
 @media screen and (min-width: 1000px) {
   .main {
     grid-template-columns: 5% repeat(6, 1fr) 5%;
-    grid-gap: 20px;
+    row-gap: 20px;
   }
+}
+
+.home__photo {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  border: 5px solid rgb(166, 100, 15);
+}
+
+.home__address {
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+
+.address__pin {
+  width: 1.5em;
+  margin-right: 5px;
 }
 
 .booking__perex {
@@ -623,8 +641,7 @@ table {
     grid-column: 2/8;
   }
 }
-
-.catering__contact > a {
+.catering__contact__contact > a {
   text-decoration: none;
   color: rgb(79, 25, 11);
 }
@@ -637,11 +654,6 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .catering__contacts {
     margin-left: 55px;
   }
 }

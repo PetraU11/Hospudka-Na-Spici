@@ -49,7 +49,7 @@ $gap-row: 20px;
     max-width: 300px; 
     max-height: 100px;
     text-align: left;
-    color:$c-h1;
+    color:$c-primary;
     font-size:140%;
     padding: 10px;
 
@@ -102,7 +102,7 @@ margin-top: 10px;
 display: block;
 width: 35px;
 height: 5px;
-background-color: $c-lines;;
+background-color: $c-primary;;
 border-radius: 10%;
 margin-top: 5px;
 }

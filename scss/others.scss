@@ -33,10 +33,30 @@ $gap-row: 20px;
    
     @media screen and (min-width: 1000px) {
         grid-template-columns: 5% repeat(6, 1fr) 5%;
-        grid-gap: 20px;
+        row-gap: 20px;
      }}
     
 // homepage - Úvod //
+
+.home__photo {
+    width: 115px;
+   height:115px;
+   border-radius: 50%;
+   border: 5px solid $c-lines;
+
+ }
+
+
+
+
+
+.home__address { 
+    margin-left: auto;
+    margin-right:auto;
+    display:none;}
+
+.address__pin {width: 1.5em;
+        margin-right: 5px; }
 
 
 // about - O nás // 
@@ -49,8 +69,8 @@ $gap-row: 20px;
     grid-row: 2 / 3;
     @media screen and (min-width: 1000px) {
         grid-column: 2 / 8;
-    }
-}
+    }}
+
 
 .booking__info {
     grid-row: 3/4;
@@ -77,74 +97,73 @@ form {
     margin-bottom: 10px;
             
      @media screen and (min-width: 1000px) {
-                    display:inline-block;} }
+    display:inline-block;} }
         
-        .form label { display:block;
+.form label { display:block;
         
-            @media screen and (min-width: 1000px) {
-                display:inline-block;} }
+     @media screen and (min-width: 1000px) {
+     display:inline-block;} }
         
-        .form input,
-        .form textarea {width: 100%;
-            border: 2px solid $c-lines;
-            border-radius: 10px;
-            font-size: 16px;
-            padding: 5px 10px;
-            background-color: $c-background;
+.form input,
+.form textarea {
+    width: 100%;
+    border: 2px solid $c-lines;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: $c-background;
         
-            @media screen and (min-width: 700px) {
-                flex: 1 1 100%;
+    @media screen and (min-width: 700px) {
+    flex: 1 1 100%;
           }}
         
-        .form input:focus,
-        .form textarea:focus
-           { outline:0;
-            border: 2px solid $c-text; }
+.form input:focus,
+.form textarea:focus { 
+    outline:0;
+    border: 2px solid $c-text; }
         
        /* .form input:placeholder-shown {background-color:bisque;}*/
-        .form input:not(:placeholder-shown):valid {
-            background-color: $c-primary;} 
+.form input:not(:placeholder-shown):valid {
+    background-color: $c-primary;} 
        
             
-        .required {
-            color: red;
-            margin:0;
-            display:inline-block;
+.required {
+    color: red;
+    margin:0;
+    display:inline-block;
         }
         
-        .booking-button {color: $c-primary;
-            border: 5px solid $c-text;
-            background-color: $c-button;
-        padding: 10px;
-        border-radius: 10px;
-        font-size: 1.2em;}
+.booking-button {
+    color: $c-primary;
+    border: 5px solid $c-text;
+    background-color: $c-button;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;}
         
-        .booking-button:hover {
-            background-color:$c-text;
-            border: 5px solid $c-button;}
+.booking-button:hover {
+    background-color:$c-text;
+    border: 5px solid $c-button;}
         
-        .booking-button:active {
-            background-color:$c-primary;
-            border: 5px solid $c-button;
-            color: $c-text;}
-    
+.booking-button:active {
+    background-color:$c-primary;
+    border: 5px solid $c-button;
+    color: $c-text;}
         
-        .booking-sent {grid-row: 3 / 4;
-            grid-column: 1 / -1;
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
-        }
+.booking-sent {grid-row: 3 / 4;
+    grid-column: 1 / -1;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    }
 
-  
 
 // drinks - Nápojový lístek // 
 
 .drinks__perex {
     @media screen and (min-width: 1000px) {
         grid-column: 2 / 8; 
-    }
-}
+    }}
 
 .drinks__menu {
     margin-top: 40px;
@@ -175,9 +194,8 @@ form {
 .drinks__list.menu {text-align: center;}
 
 .drinks__list {
-text-align:left;
-
-@media screen and (min-width: 1000px) { 
+    text-align:left;
+    @media screen and (min-width: 1000px) { 
     grid-column: 3 / 7;}}
 
 table { width: 100%; }
@@ -235,28 +253,24 @@ table { width: 100%; }
 
 .catering__contact { 
     @media screen and (min-width: 1000px) {
-    grid-column: 2 / 8;}}
+    grid-column: 2 / 8;}
 
-    .catering__contact > a {
+    &__contact > a {
     text-decoration: none;
     color:$c-text;
-    }
+    }}
     
-    .catering__contacts {
+.catering__contacts {
     display:block;
     
     @media screen and (min-width: 1000px) {
     display:flex;
     justify-content: center;
     align-items: center;
-    }}
-    
-    .catering__contacts {
-    @media screen and (min-width: 1000px) {
     margin-left: 55px;
     }}
-
-    .contacts__type:nth-last-child(2){
+    
+.contacts__type:nth-last-child(2){
     margin-left: 20px;
     margin-right: 20px;}
 
