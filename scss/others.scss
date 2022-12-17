@@ -16,6 +16,7 @@ $gap-row: 20px;
 
 .main {
     display:grid;
+    row-gap: 30px;
     position: relative;
     z-index: 1;
     top: -45px;
@@ -39,23 +40,76 @@ $gap-row: 20px;
 // homepage - Úvod //
 
 .home__photo {
-    width: 115px;
+   width: 115px;
    height:115px;
    border-radius: 50%;
    border: 5px solid $c-lines;
+    margin-bottom:10px;
+    
+}
 
- }
+.home__hr {
+ border: 2px solid $c-lines;
+ margin-left: 40px;
+ margin-right: 40px;}
+
+div[class$="text"] {
+    max-width: 450px;
+    padding-left: 15px;
+    @media screen and (min-width: 750px) {
+        max-width: 500px;
+}}
+
+.home__about {
+    @media screen and (min-width: 750px) {
+     display:flex;
+     justify-content: left;
+     align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}}
+
+.home__news {
+    @media screen and (min-width: 750px) {
+     display:flex;
+     justify-content: left;
+     align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}}
+
+.home__news p {margin: 0px;}
+
+.home__booking {
+    @media screen and (min-width: 750px) {
+    display:flex;
+    justify-content: left;
+    align-items: center;
+   padding-left: 10px;
+   padding-right: 10px;
+
+}}
+
+.home__catering {
+    @media screen and (min-width: 750px) {
+    display:flex;
+    justify-content: left;
+    align-items: center;
+   padding-left: 10px;
+   padding-right: 10px;
+
+}}
 
 
-
-
-
+.home__hours {display:none;}
+    
 .home__address { 
     margin-left: auto;
     margin-right:auto;
     display:none;}
 
-.address__pin {width: 1.5em;
+.address_pin {width: 1.5em;
         margin-right: 5px; }
 
 

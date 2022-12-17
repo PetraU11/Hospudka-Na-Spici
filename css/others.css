@@ -365,6 +365,7 @@ span {
 
 .main {
   display: grid;
+  row-gap: 30px;
   position: relative;
   z-index: 1;
   top: -45px;
@@ -391,6 +392,71 @@ span {
   height: 115px;
   border-radius: 50%;
   border: 5px solid rgb(166, 100, 15);
+  margin-bottom: 10px;
+}
+
+.home__hr {
+  border: 2px solid rgb(166, 100, 15);
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+div[class$=text] {
+  max-width: 450px;
+  padding-left: 15px;
+}
+@media screen and (min-width: 750px) {
+  div[class$=text] {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .home__about {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .home__news {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.home__news p {
+  margin: 0px;
+}
+
+@media screen and (min-width: 750px) {
+  .home__booking {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .home__catering {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.home__hours {
+  display: none;
 }
 
 .home__address {
@@ -399,7 +465,7 @@ span {
   display: none;
 }
 
-.address__pin {
+.address_pin {
   width: 1.5em;
   margin-right: 5px;
 }
