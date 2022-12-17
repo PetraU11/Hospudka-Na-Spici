@@ -16,7 +16,7 @@ $gap-row: 20px;
 
 .main {
     display:grid;
-    row-gap: 30px;
+    row-gap: 10px;
     position: relative;
     z-index: 1;
     top: -45px;
@@ -55,10 +55,7 @@ $gap-row: 20px;
  border: 2px solid $c-lines;
  margin-left: 40px;
  margin-right: 40px;
- @media screen and (min-width: 750px) {
-   }
-   @media screen and (min-width: 1000px) {
-   }}
+}
 
 div[class$="text"] {
     max-width: 450px;
@@ -66,7 +63,6 @@ div[class$="text"] {
     margin-left:auto;
    
     @media screen and (min-width: 750px) {
-    
     margin-right: 10px;
     margin-left:10px;
         font-size: larger;
@@ -104,12 +100,11 @@ grid-column: 2 / 8;
         grid-column: 5 / 9;
 }}
 
-.home__news h2 {margin-top:0;
-margin-bottom:0;
-@media screen and (min-width: 750px) {
-margin-left: 40px;}}
+.home__news p {margin-top:0;
+margin-bottom:0;}
 
-h2:nth-child(2) {margin-bottom: 15px;}
+p:nth-child(2) {margin-bottom: 15px;}
+
 
 .home__booking {
     @media screen and (min-width: 750px) {
@@ -131,7 +126,8 @@ h2:nth-child(2) {margin-bottom: 15px;}
     justify-content: center;
     align-items: center;
    padding-left: 10px;
-   padding-right: 10px;}
+   padding-right: 10px;
+margin-left: 80px;}
    @media screen and (min-width: 1000px) {    
     grid-row: 5 / 6; 
     grid-column: 2 / 8;}
@@ -152,9 +148,42 @@ h2:nth-child(2) {margin-bottom: 15px;}
 
 
 // about - O nás // 
-.about__photo {width: 40%;}
+.about__photo {width: 30%;
+    border-radius: 10px;
+    border: 5px solid $c-lines;
+}
 
+.about__hr {
+    border: 2px solid $c-lines;
+    margin-left: 40px;
+    margin-right: 40px;
+   }
 
+.about__perex {max-width: 700px;
+margin-left:auto;
+margin-right: auto;
+@media screen and (min-width: 1000px) {
+    grid-column: 2 / 8;
+}}
+
+.about__info {
+    @media screen and (min-width: 1000px) {
+        grid-column: 2 / 8;
+    }  
+}
+
+.about__gallery {
+    @media screen and (min-width: 1000px) {
+        grid-column: 2 / 8;
+    }  
+
+}
+
+.about__bonus {
+    @media screen and (min-width: 1000px) {
+        grid-column: 2 / 8;
+    }  
+}
 
 // events - Aktuality & Akce // 
 
@@ -173,6 +202,7 @@ h2:nth-child(2) {margin-bottom: 15px;}
     @media screen and (min-width: 1000px) {
     grid-column: 5 / 8;
     grid-row:3 / 5;}}
+
         
 form {
     width: 90%;
@@ -263,8 +293,11 @@ form {
 .drinks__menu {
     margin-top: 40px;
     margin-bottom: 40px;
+    width: 80%;
+    margin-right:auto;
+    margin-left:auto;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 750px) {
         display:none;
  }}
 
@@ -276,7 +309,7 @@ form {
     border-bottom: 1px solid;
     padding: 5px;
     border-radius: 10px;
-    padding:20px 0;}
+    padding:15px 0;}
 
 .drinks__menu-item:hover {
     background-color:$c-lines;
@@ -337,8 +370,8 @@ table { width: 100%; }
     
     .pricing__photo {
         width: 70%;
-        border: 2px solid $c-text;
-        border-radius: 5px;
+        border-radius: 10px;
+    border: 5px solid $c-lines;
     }
 
 
@@ -371,9 +404,10 @@ table { width: 100%; }
 
 
 hr {
-border: 1px solid $c-lines;
+border: 2px solid $c-lines;
 margin-left: 40px;
 margin-right: 40px;
+
 }
 
 h2 {

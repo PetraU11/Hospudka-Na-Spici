@@ -365,7 +365,7 @@ span {
 
 .main {
   display: grid;
-  row-gap: 30px;
+  row-gap: 10px;
   position: relative;
   z-index: 1;
   top: -45px;
@@ -407,6 +407,7 @@ span {
   margin-left: 40px;
   margin-right: 40px;
 }
+
 div[class$=text] {
   max-width: 450px;
   margin-right: auto;
@@ -464,17 +465,12 @@ div[class$=text] {
   }
 }
 
-.home__news h2 {
+.home__news p {
   margin-top: 0;
   margin-bottom: 0;
 }
-@media screen and (min-width: 750px) {
-  .home__news h2 {
-    margin-left: 40px;
-  }
-}
 
-h2:nth-child(2) {
+p:nth-child(2) {
   margin-bottom: 15px;
 }
 
@@ -507,6 +503,7 @@ h2:nth-child(2) {
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
+    margin-left: 80px;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -538,7 +535,44 @@ h2:nth-child(2) {
 }
 
 .about__photo {
-  width: 40%;
+  width: 30%;
+  border-radius: 10px;
+  border: 5px solid rgb(166, 100, 15);
+}
+
+.about__hr {
+  border: 2px solid rgb(166, 100, 15);
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.about__perex {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1000px) {
+  .about__perex {
+    grid-column: 2/8;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .about__info {
+    grid-column: 2/8;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .about__gallery {
+    grid-column: 2/8;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .about__bonus {
+    grid-column: 2/8;
+  }
 }
 
 .booking__perex {
@@ -669,8 +703,11 @@ form {
 .drinks__menu {
   margin-top: 40px;
   margin-bottom: 40px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .drinks__menu {
     display: none;
   }
@@ -684,7 +721,7 @@ form {
   border-bottom: 1px solid;
   padding: 5px;
   border-radius: 10px;
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 .drinks__menu-item:hover {
@@ -763,8 +800,8 @@ table {
 
 .pricing__photo {
   width: 70%;
-  border: 2px solid rgb(79, 25, 11);
-  border-radius: 5px;
+  border-radius: 10px;
+  border: 5px solid rgb(166, 100, 15);
 }
 
 @media screen and (min-width: 1000px) {
@@ -801,7 +838,7 @@ table {
 }
 
 hr {
-  border: 1px solid rgb(166, 100, 15);
+  border: 2px solid rgb(166, 100, 15);
   margin-left: 40px;
   margin-right: 40px;
 }
