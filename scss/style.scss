@@ -104,10 +104,12 @@ grid-column: 2 / 8;
         grid-column: 5 / 9;
 }}
 
-.home__news p {margin-top:0;
+.home__news h2 {margin-top:0;
 margin-bottom:0;
 @media screen and (min-width: 750px) {
 margin-left: 40px;}}
+
+h2:nth-child(2) {margin-bottom: 15px;}
 
 .home__booking {
     @media screen and (min-width: 750px) {
@@ -150,6 +152,9 @@ margin-left: 40px;}}
 
 
 // about - O nás // 
+.about__photo {width: 40%;}
+
+
 
 // events - Aktuality & Akce // 
 
