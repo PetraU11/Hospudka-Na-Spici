@@ -1,21 +1,22 @@
 @use 'body';
 @use 'header';
 @use 'footer';
-@use 'buttons-homepage';
-@use 'primary-logos_homepage';
-
+@use 'buttons';
+@use 'primary-logos';
 
 $c-background:rgb(247, 219, 181); 
 $c-lines:rgb(166, 100, 15);
+$c-footer: rgb(166, 100, 15);
 $c-h1: rgb(240, 226, 207);
 $c-primary: rgb(240, 226, 207);
+$c-footer-text: rgb(240, 226, 207);
 $c-text: rgb(79, 25, 11);
 $c-button:rgb(131, 86, 29);
 $gap-row: 20px;
 
-
 .main {
     display:grid;
+    row-gap: 30px;
     position: relative;
     z-index: 1;
     top: -45px;
@@ -23,69 +24,319 @@ $gap-row: 20px;
     width: 90vw;
     margin-left: auto;
     margin-right:auto;
-    padding-top: 90px;
-    padding-bottom: 90px;
     border: 2px solid $c-text;
     background-color: $c-primary; 
     color: $c-text;
     text-align: center;
+    padding: 5px;
+    padding-bottom: 120px;
+   
    
     @media screen and (min-width: 1000px) {
-        grid-template-columns: 5% repeat(6, 1fr) 5%; }}
+        grid-template-columns: 5% repeat(6, 1fr) 5%;
+        row-gap: 20px;
+     }}
+    
+// homepage - Úvod //
 
-        
-.home__perex {
-margin-top: 30px;
-margin-bottom: 30px;
-margin-left: 10px;
-margin-right: 10px;
-grid-row: 2 / 3;
+.home__photo {
+   width: 115px;
+   height:115px;
+   border-radius: 50%;
+   border: 5px solid $c-lines;
+    margin-bottom:10px;
+    
 }
 
 .home__hr {
-border: 2px solid $c-lines;
-margin-left: 40px;
-margin-right: 40px; }
+ border: 2px solid $c-lines;
+ margin-left: 40px;
+ margin-right: 40px;}
 
+div[class$="text"] {
+    max-width: 450px;
+    padding-left: 15px;
+    @media screen and (min-width: 750px) {
+        max-width: 500px;
+}}
+
+.home__about {
+    @media screen and (min-width: 750px) {
+     display:flex;
+     justify-content: left;
+     align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}}
 
 .home__news {
-grid-row: 4 / 5;
-width: 90%;
-margin-left:auto;
-margin-right: auto;
-}
+    @media screen and (min-width: 750px) {
+     display:flex;
+     justify-content: left;
+     align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
 
-.booking__text { grid-row: 6 / 7;}
+}}
 
-.drinks__text {grid-row: 8 / 9;}
+.home__news p {margin: 0px;}
 
-.catering__text {grid-row: 10 / 11;}
+.home__booking {
+    @media screen and (min-width: 750px) {
+    display:flex;
+    justify-content: left;
+    align-items: center;
+   padding-left: 10px;
+   padding-right: 10px;
 
-.hours {margin: 30px auto;
-    display:none;
-   
+}}
+
+.home__catering {
+    @media screen and (min-width: 750px) {
+    display:flex;
+    justify-content: left;
+    align-items: center;
+   padding-left: 10px;
+   padding-right: 10px;
+
+}}
+
+
+.home__hours {display:none;}
+    
+.home__address { 
+    margin-left: auto;
+    margin-right:auto;
+    display:none;}
+
+.address_pin {width: 1.5em;
+        margin-right: 5px; }
+
+
+// about - O nás // 
+
+// events - Aktuality & Akce // 
+
+// booking - Rezervace // 
+
+.booking__perex {
+    grid-row: 2 / 3;
     @media screen and (min-width: 1000px) {
-        grid-row: 6 / 7;
-        grid-column: 3 / 6;
-            } }
+        grid-column: 2 / 8;
+    }}
 
-.address { 
-margin-left: auto;
-margin-right:auto;
-display:none;
-   
-&__pin {width: 1.5em;
-    margin-right: 5px; }
 
+.booking__info {
+    grid-row: 3/4;
+ 
     @media screen and (min-width: 1000px) {
-        grid-row: 7 / 8;
-        grid-column: 3 / 6;
-        text-align: left;
-        margin-bottom: 50px;
-        text-align: center;
+    grid-column: 5 / 8;
+    grid-row:3 / 5;}}
+        
+form {
+    width: 90%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right:auto;
+    grid-row: 4 / 6;
+        
+    @media screen and (min-width: 1000px) {
+    width: 100%;
+    grid-column: 2 / 5;
+    grid-row: 3 / 5;
+    
+    }}
+               
+.form {
+    margin-bottom: 10px;
+            
+     @media screen and (min-width: 1000px) {
+    display:inline-block;} }
+        
+.form label { display:block;
+        
+     @media screen and (min-width: 1000px) {
+     display:inline-block;} }
+        
+.form input,
+.form textarea {
+    width: 100%;
+    border: 2px solid $c-lines;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: $c-background;
+        
+    @media screen and (min-width: 700px) {
+    flex: 1 1 100%;
+          }}
+        
+.form input:focus,
+.form textarea:focus { 
+    outline:0;
+    border: 2px solid $c-text; }
+        
+       /* .form input:placeholder-shown {background-color:bisque;}*/
+.form input:not(:placeholder-shown):valid {
+    background-color: $c-primary;} 
+       
+            
+.required {
+    color: red;
+    margin:0;
+    display:inline-block;
+        }
+        
+.booking-button {
+    color: $c-primary;
+    border: 5px solid $c-text;
+    background-color: $c-button;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;}
+        
+.booking-button:hover {
+    background-color:$c-text;
+    border: 5px solid $c-button;}
+        
+.booking-button:active {
+    background-color:$c-primary;
+    border: 5px solid $c-button;
+    color: $c-text;}
+        
+.booking-sent {grid-row: 3 / 4;
+    grid-column: 1 / -1;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
     }
+
+
+// drinks - Nápojový lístek // 
+
+.drinks__perex {
+    @media screen and (min-width: 1000px) {
+        grid-column: 2 / 8; 
+    }}
+
+.drinks__menu {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 1000px) {
+        display:none;
+ }}
+
+.drinks__menu-item {
+    display:block;
+    background-color: $c-text;
+    color:$c-primary;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    padding: 5px;
+    border-radius: 10px;
+    padding:20px 0;}
+
+.drinks__menu-item:hover {
+    background-color:$c-lines;
 }
-  
+
+.drinks__menu-item:active {
+    background-color:$c-button;
+    color: $c-text;}
+
+.drinks__list.menu {text-align: center;}
+
+.drinks__list {
+    text-align:left;
+    @media screen and (min-width: 1000px) { 
+    grid-column: 3 / 7;}}
+
+table { width: 100%; }
+
+// Catering // 
+
+.catering__perex {
+    @media screen and (min-width: 1000px) {
+    grid-column: 2 / 8;   }}
+
+.catering__description {
+    @media screen and (min-width: 1000px) {
+    grid-column: 3 / 7;  }}
+
+.catering__pricing {
+    @media screen and (min-width: 1000px) {
+    grid-column:  2 / 8;}}
+
+    .catering__pricing-size {
+        @media screen and (min-width: 750px) {
+        display:flex;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }}
+    
+    .pricing-size {
+        display:flex; 
+        justify-content: center;}
+    
+    .pricing-size:nth-child(2) {
+        margin-left: 20px;
+        margin-right: 20px;}
+    
+    .size { 
+        color: $c-text;
+        padding-top: 28px;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 5px solid $c-text;
+        background-color: $c-primary;
+        font-weight: bold;}
+    
+    .pricing__photo {
+        width: 70%;
+        border: 2px solid $c-text;
+        border-radius: 5px;
+    }
+
+
+.catering__orders {
+    @media screen and (min-width: 1000px) {
+    grid-column: 3 / 7; }}
+
+.catering__contact { 
+    @media screen and (min-width: 1000px) {
+    grid-column: 2 / 8;}
+
+    &__contact > a {
+    text-decoration: none;
+    color:$c-text;
+    }}
+    
+.catering__contacts {
+    display:block;
+    
+    @media screen and (min-width: 1000px) {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 55px;
+    }}
+    
+.contacts__type:nth-last-child(2){
+    margin-left: 20px;
+    margin-right: 20px;}
+
+
+hr {
+border: 1px solid $c-lines;
+margin-left: 40px;
+margin-right: 40px;
+}
+
+h2 {font-size: 1.2em;}
+
 
 
 
