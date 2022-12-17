@@ -45,8 +45,9 @@ $gap-row: 20px;
    border-radius: 50%;
    border: 5px solid $c-lines;
     margin-bottom:10px;
-    
-}
+    @media screen and (min-width: 750px) {
+        width: 140px;
+        height:140px;} }
 
 .home__hr {
  border: 2px solid $c-lines;
@@ -55,28 +56,47 @@ $gap-row: 20px;
 
 div[class$="text"] {
     max-width: 450px;
-    padding-left: 15px;
+    margin-right:auto;
+    margin-left:auto;
+   
     @media screen and (min-width: 750px) {
-        max-width: 500px;
+    max-width: 500px;
+    min-width: 480px;
+    margin-right: 10px;
+    margin-left:10px;
+        font-size: larger;
+
 }}
+
 
 .home__about {
     @media screen and (min-width: 750px) {
      display:flex;
-     justify-content: left;
+     justify-content: center;
      align-items: center;
     padding-left: 10px;
-    padding-right: 10px;
-}}
+    padding-right: 10px;}
+    @media screen and (min-width: 1000px) {
+grid-row: 2 / 3; 
+grid-column: 3 / 7;
+    }
+    @media screen and (min-width: 1500px) {
+        grid-row: 2 / 3;
+        grid-column: 1 / 5;}}
 
 .home__news {
     @media screen and (min-width: 750px) {
      display:flex;
-     justify-content: left;
+     justify-content: center;
      align-items: center;
     padding-left: 10px;
-    padding-right: 10px;
-
+    padding-right: 10px; }
+    @media screen and (min-width: 1000px) {    
+        grid-row: 3 / 4; 
+        grid-column: 3 / 7;}
+    @media screen and (min-width: 1500px) {
+        grid-row: 2 / 3;
+        grid-column: 5 / 9;
 }}
 
 .home__news p {margin: 0px;}
@@ -84,22 +104,30 @@ div[class$="text"] {
 .home__booking {
     @media screen and (min-width: 750px) {
     display:flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
    padding-left: 10px;
-   padding-right: 10px;
-
-}}
+   padding-right: 10px;}
+   @media screen and (min-width: 1000px) {    
+    grid-row: 4 / 5; 
+    grid-column: 3 / 7;}
+   @media screen and (min-width: 1500px) {
+   grid-row: 3 / 4;
+   grid-column: 1 / 5;}}
 
 .home__catering {
     @media screen and (min-width: 750px) {
     display:flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
    padding-left: 10px;
-   padding-right: 10px;
-
-}}
+   padding-right: 10px;}
+   @media screen and (min-width: 1000px) {    
+    grid-row: 5 / 6; 
+    grid-column: 3 / 7;}
+   @media screen and (min-width: 1500px) {
+    grid-row: 3 / 4;
+    grid-column: 5 / 9;}}
 
 
 .home__hours {display:none;}
