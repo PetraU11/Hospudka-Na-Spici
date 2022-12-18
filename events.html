@@ -3,6 +3,17 @@ layout: layout.njk
 title: Aktuality & Akce
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem commodi, laboriosam, voluptates ratione, explicabo dicta laborum obcaecati cum quod eveniet culpa magnam minus tenetur iure similique in dignissimos molestiae sit.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex est blanditiis fugiat voluptatum culpa nostrum distinctio ea. Explicabo placeat architecto adipisci accusamus ab vitae maiores expedita reprehenderit, doloremque, repudiandae illum!
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam saepe doloribus maiores iure officiis nam laboriosam aut eligendi magnam, debitis necessitatibus reprehenderit sequi dolorem quod nobis consectetur temporibus quis fuga.
+
+{% for prispevek in collections.aktuality | reverse %}
+
+<h2>{{ prispevek.data.title }} </h2>
+<p> {{ prispevek.data.perex }}  </p>
+<p><a href="{{ prispevek.url }}">Menu zde </a></p>
+
+<hr>
+
+
+
+
+
+{% endfor %}

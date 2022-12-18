@@ -56,3 +56,19 @@ padding-right: 5px;
     background-color:$c-text;
     border: 5px solid $c-button;
 }
+
+
+.back-button {text-decoration: none;
+    color: $c-primary;
+    margin-left: auto;
+    margin-right: auto;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    border: 5px solid $c-text;
+    background-color: $c-button;
+transform:translateY(-65px); 
+
+@media screen and (min-width: 1000px) {
+grid-column: 3 / 5;
+}}

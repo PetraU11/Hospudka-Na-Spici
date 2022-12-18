@@ -337,6 +337,24 @@ span {
   border: 5px solid rgb(131, 86, 29);
 }
 
+.back-button {
+  text-decoration: none;
+  color: rgb(240, 226, 207);
+  margin-left: auto;
+  margin-right: auto;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  border: 5px solid rgb(79, 25, 11);
+  background-color: rgb(131, 86, 29);
+  transform: translateY(-65px);
+}
+@media screen and (min-width: 1000px) {
+  .back-button {
+    grid-column: 3/5;
+  }
+}
+
 .main__logo-top {
   width: 110px;
   height: 110px;
