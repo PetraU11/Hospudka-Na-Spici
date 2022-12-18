@@ -4,16 +4,47 @@ title: Aktuality & Akce
 ---
 
 
-{% for prispevek in collections.aktuality | reverse %}
 
-<h2>{{ prispevek.data.title }} </h2>
+
+<div class="events__monthly"> 
+
+<div> 
+<h2> Říjen 2022 </h2>
+<img class="events__photo-hamburger"src="/images/events_hamburger.png" alt="ikona hamburgeru">
+
+</div>
+
+<div class="events__description"> 
+{% for prispevek in collections.rijen %}
+
+<h2> {{ prispevek.data.title }} </h2>
 <p> {{ prispevek.data.perex }}  </p>
-<p><a href="{{ prispevek.url }}">Menu zde </a></p>
+<p> Pro menu klikněte <a class="events__link"href="{{ prispevek.url }}"> ZDE </a> </p>
+{% endfor %} 
+</div>
 
-<hr>
+</div>
 
 
+<div class="events__monthly"> 
 
+<div> 
+<h2> Září 2022 </h2>  
+<img src="/images/events_time.png" alt="ikona hodin">
+</div>
 
+<div class="events__description">
+{% for prispevek in collections.zari %}
 
-{% endfor %}
+<h3> {{ prispevek.data.title }} </h2>
+<p> {{ prispevek.data.perex }}  </p>
+
+{% endfor %} 
+
+<p> Otevírací doba <br>
+    PO-SO 10:00 - 24:00<br>
+   NE 10:00 - 23:00</p>
+</div> 
+
+</div>
+

@@ -1,11 +1,8 @@
 ---
 layout: menu.njk
-title: Zabíjačkové hody
-date: 
-perex: blabla
-photo: bar Small.jpeg
-alt: bar
-tags: aktuality
+title: Zabijačkové hody
+perex: 28. - 29. 10. od 11 hod. 
+tags: rijen
 ---
 
 

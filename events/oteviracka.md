@@ -1,16 +1,10 @@
 ---
 layout: menu.njk
-title: Vánoční otevirací doba
-date: 2022-12-01T08:00
-perex: tady máte naši otevírací dobu během Vánoc  
-photo: 11 Small.jpeg
-alt: bar
-tags: aktuality
+title: Změna otevírací doby
+month: Září 2022
+perex:  Od 01.09.2022 dochází ke změně otevírací doby. 
+photo: events_time.png
+alt: ikona hodin
+tags: zari
 ---
 
-
-
-
-## Nadpis v md
-
-otevíračka bude taková a maková

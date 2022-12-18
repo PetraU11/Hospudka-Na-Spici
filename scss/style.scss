@@ -22,6 +22,7 @@ $gap-row: 20px;
     top: -45px;
     bottom: 150px;
     width: 90vw;
+    max-width: 1400px;
     margin-left: auto;
     margin-right:auto;
     border: 2px solid $c-text;
@@ -187,6 +188,28 @@ margin-right: auto;
 
 // events - Aktuality & Akce // 
 
+.events__monthly {
+    @media screen and (min-width: 750px) {
+        width: 70%;
+        margin-right:auto;
+        margin-left:auto; 
+        display:grid;
+        grid-template-columns: 150px 1fr;
+    @media screen and (min-width: 1000px) {
+        grid-column: 3 / 7;
+}
+}}
+
+.events__monthly img {
+    @media screen and (min-width: 750px) {
+        width: 100px;
+ }}
+
+.events__link {
+font-weight: bold;
+color:$c-text;
+}
+
 // booking - Rezervace // 
 
 .booking__perex {
@@ -258,22 +281,6 @@ form {
     display:inline-block;
         }
         
-.booking-button {
-    color: $c-primary;
-    border: 5px solid $c-text;
-    background-color: $c-button;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 1.2em;}
-        
-.booking-button:hover {
-    background-color:$c-text;
-    border: 5px solid $c-button;}
-        
-.booking-button:active {
-    background-color:$c-primary;
-    border: 5px solid $c-button;
-    color: $c-text;}
         
 .booking-sent {grid-row: 3 / 4;
     grid-column: 1 / -1;
@@ -413,6 +420,12 @@ margin-right: 40px;
 h2 {
     font-size: 1.2em;}
 
+/* Collections */
+
+.article__content {
+    @media screen and (min-width: 1000px) {
+        grid-column: 3 / 7;
+}}
 
 
 

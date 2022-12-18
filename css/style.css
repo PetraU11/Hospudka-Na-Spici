@@ -337,7 +337,29 @@ span {
   border: 5px solid rgb(131, 86, 29);
 }
 
-.back-button {
+/* Booking button */
+.booking-button {
+  color: rgb(240, 226, 207);
+  border: 5px solid rgb(79, 25, 11);
+  background-color: rgb(131, 86, 29);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+
+.booking-button:hover {
+  background-color: rgb(79, 25, 11);
+  border: 5px solid rgb(131, 86, 29);
+}
+
+.booking-button:active {
+  background-color: rgb(240, 226, 207);
+  border: 5px solid rgb(131, 86, 29);
+  color: rgb(79, 25, 11);
+}
+
+/* Collections */
+.article__back-button {
   text-decoration: none;
   color: rgb(240, 226, 207);
   margin-left: auto;
@@ -350,9 +372,49 @@ span {
   transform: translateY(-65px);
 }
 @media screen and (min-width: 1000px) {
-  .back-button {
-    grid-column: 3/5;
+  .article__back-button {
+    grid-column: 4/6;
   }
+}
+
+.article__back-button:hover {
+  background-color: rgb(79, 25, 11);
+  border: 5px solid rgb(131, 86, 29);
+}
+
+.article__back-button:active {
+  background-color: rgb(240, 226, 207);
+  border: 5px solid rgb(131, 86, 29);
+  color: rgb(79, 25, 11);
+}
+
+.article__span-button {
+  margin-top: 30px;
+}
+
+.article__span-back-down {
+  width: 120px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  color: rgb(240, 226, 207);
+  border: 5px solid rgb(79, 25, 11);
+  background-color: rgb(131, 86, 29);
+  border-radius: 10px;
+  font-size: 1.2em;
+  padding-top: 10px;
+}
+
+.article__span-back-down:hover {
+  background-color: rgb(79, 25, 11);
+  border: 5px solid rgb(131, 86, 29);
+}
+
+.article__span-back-down:active {
+  background-color: rgb(240, 226, 207);
+  border: 5px solid rgb(131, 86, 29);
+  color: rgb(79, 25, 11);
 }
 
 .main__logo-top {
@@ -389,6 +451,7 @@ span {
   top: -45px;
   bottom: 150px;
   width: 90vw;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
   border: 2px solid rgb(79, 25, 11);
@@ -593,6 +656,32 @@ p:nth-child(2) {
   }
 }
 
+@media screen and (min-width: 750px) {
+  .events__monthly {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+}
+@media screen and (min-width: 750px) and (min-width: 1000px) {
+  .events__monthly {
+    grid-column: 3/7;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .events__monthly img {
+    width: 100px;
+  }
+}
+
+.events__link {
+  font-weight: bold;
+  color: rgb(79, 25, 11);
+}
+
 .booking__perex {
   grid-row: 2/3;
 }
@@ -682,26 +771,6 @@ form {
   color: red;
   margin: 0;
   display: inline-block;
-}
-
-.booking-button {
-  color: rgb(240, 226, 207);
-  border: 5px solid rgb(79, 25, 11);
-  background-color: rgb(131, 86, 29);
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 1.2em;
-}
-
-.booking-button:hover {
-  background-color: rgb(79, 25, 11);
-  border: 5px solid rgb(131, 86, 29);
-}
-
-.booking-button:active {
-  background-color: rgb(240, 226, 207);
-  border: 5px solid rgb(131, 86, 29);
-  color: rgb(79, 25, 11);
 }
 
 .booking-sent {
@@ -863,4 +932,11 @@ hr {
 
 h2 {
   font-size: 1.2em;
+}
+
+/* Collections */
+@media screen and (min-width: 1000px) {
+  .article__content {
+    grid-column: 3/7;
+  }
 }/*# sourceMappingURL=style.css.map */

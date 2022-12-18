@@ -1,16 +1,29 @@
 ---
 layout: menu.njk
 title: Gulášový víkend
-date: 2022-10-01T08:00
-perex: Tady máte gulášovou nálož
-photo: bar_7 Small.jpeg
-alt: bar
-tags: aktuality
+month:
+perex: 21. - 23. 10. od 16 hod.
+tags: rijen
 ---
 
 
 
 
-## Nadpis v md
+## Menu
 
-guláš, guláš, všude guláš
+### Polévka
+
+Gulášová polévka 65 Kč
+
+### Hlavní jídlo
+
+Segedínský guláš s knedlíkem 120 Kč
+
+Burgundský guláš s knedlíkem 135 Kč
+
+Tradiční pikantní guláš 115 Kč
+
+Krůtí guláš 120 Kč
+
+Hlívovo-zeleninový guláš 130 Kč
+

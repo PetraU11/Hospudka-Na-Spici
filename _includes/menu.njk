@@ -43,36 +43,27 @@
      </header>
 
 
-<main class="main"> 
-
-     <img class="main__logo-top" src="/images/main-logo.png" alt="Logo">
-
-     <a class="button{{ ' active' if page.fileSlug === ''}}" href="/"> <span class="span__homepage"> Úvod </span></a>
-     <a class="button{{ ' active' if page.fileSlug === 'about'}}"href="/about/"> <span class="span__about"> O nás </span></a>
-     <a class="button{{ ' active' if page.fileSlug === 'events'}}"  href="/events/"> <span class="span__events"> Aktuality & Akce </span></a> 
-     <a class="button{{ ' active' if page.fileSlug === 'booking'}}" href="/booking/"> <span class="span__booking"> Rezervace </span> </a> 
-     <a class="button{{ ' active' if page.fileSlug === 'drinks'}}" href="/drinks/"> <span class="span__drinks"> Nápojový lístek</span></a> 
-     <a class="button{{ ' active' if page.fileSlug === 'catering'}}" href="/catering/"> <span class="span__catering"> Catering </span></a>
-    
+<main class="main">     
      
-      <img class="main__logo-bottom" src="/images/main-logo.png" alt="Logo">
-     
-     
-<!-- <img class="article__photo" src="/images/{{photo}}" alt="{{alt}}"> -->
+<a class="article__back-button" href=/events/> <span class="article__span-button"> Aktuality & Akce <span> </a> 
 
-<a class="back-button" href=/events/> <span> Zpět <span> </a> 
+<h2 class="article__month"> {{month}} </h2>
 
 <h2 class="article__title"> {{title}} </h2>
 
-<p class="article__perex"> {{perex}} </p> 
 
-<!-- <p class="article__meta"> Publikováno {{page.date.toLocaleString('cs-CZ')}} <p> -->
 
 <div class="article__content">
 
 
+
 {{content|safe}}
 
+
+
+<a class="article__button-back-down" href=/events/> <span class="article__span-back-down"> Zpět <span> </a> 
+
+<img class="main__logo-bottom" src="/images/main-logo.png" alt="Logo">
 
 </div> 
 

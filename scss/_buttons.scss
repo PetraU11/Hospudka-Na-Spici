@@ -58,7 +58,28 @@ padding-right: 5px;
 }
 
 
-.back-button {text-decoration: none;
+/* Booking button */
+
+.booking-button {
+    color: $c-primary;
+    border: 5px solid $c-text;
+    background-color: $c-button;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;}
+        
+.booking-button:hover {
+    background-color:$c-text;
+    border: 5px solid $c-button;}
+        
+.booking-button:active {
+    background-color:$c-primary;
+    border: 5px solid $c-button;
+    color: $c-text;}
+
+/* Collections */
+
+.article__back-button {text-decoration: none;
     color: $c-primary;
     margin-left: auto;
     margin-right: auto;
@@ -70,5 +91,41 @@ padding-right: 5px;
 transform:translateY(-65px); 
 
 @media screen and (min-width: 1000px) {
-grid-column: 3 / 5;
+grid-column: 4 / 6;
 }}
+
+.article__back-button:hover {
+    background-color:$c-text;
+    border: 5px solid $c-button;}
+
+.article__back-button:active {
+    background-color:$c-primary;
+    border: 5px solid $c-button;
+    color: $c-text;}
+
+.article__span-button {
+   margin-top: 30px;
+}
+
+.article__span-back-down {
+    width: 120px;
+    height: 60px;
+    margin-left: auto;
+    margin-right:auto;
+    text-decoration: none;
+    color: $c-primary;
+    border: 5px solid $c-text;
+    background-color: $c-button;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding-top: 10px;
+    }
+        
+.article__span-back-down:hover {
+    background-color:$c-text;
+    border: 5px solid $c-button;}
+        
+.article__span-back-down:active {
+    background-color:$c-primary;
+    border: 5px solid $c-button;
+    color: $c-text;}
